@@ -44,5 +44,6 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "update: language stats svg"
+            git pull --rebase origin main
             git push origin HEAD:main
           fi
