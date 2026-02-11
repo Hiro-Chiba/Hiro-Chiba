@@ -17,14 +17,3 @@ This profile auto-generates language usage stats across all my GitHub repositori
 
 - 毎週: 月曜日 00:00 UTC（日本時間 月曜日 09:00） / Weekly: Monday 00:00 UTC (Monday 09:00 JST)
 - 手動実行: Actions -> Update Language Stats -> Run workflow / Manual: Actions -> Update Language Stats -> Run workflow
-
-## オプション: 言語の除外 / Optional: Exclude Languages
-
-`EXCLUDED_LANGUAGES` をリポジトリシークレットに、カンマ区切りで設定してください。  
-Set `EXCLUDED_LANGUAGES` in repository secrets with a comma-separated list.
-
-例 / Example:
-
-```text
-Jupyter Notebook, HTML, CSS
-```
