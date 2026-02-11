@@ -1,0 +1,48 @@
+name: Update Language Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout profile repo
+        uses: actions/checkout@v4
+
+      - name: Download self-reposcope binary
+        shell: bash
+        run: |
+          curl -L https://github.com/4okimi7uki/self-reposcope/releases/latest/download/self-reposcope -o self-reposcope
+          chmod +x ./self-reposcope
+
+      - name: Generate SVG stats
+        shell: bash
+        env:
+          REPOSCOPE_TOKEN: ${{ secrets.REPOSCOPE_TOKEN }}
+          EXCLUDED_LANGUAGES: ${{ secrets.EXCLUDED_LANGUAGES }}
+        run: |
+          mkdir -p output
+          if [ -n "${EXCLUDED_LANGUAGES}" ]; then
+            ./self-reposcope --token "${REPOSCOPE_TOKEN}" --excluded-languages "${EXCLUDED_LANGUAGES}"
+          else
+            ./self-reposcope --token "${REPOSCOPE_TOKEN}"
+          fi
+
+      - name: Commit and push updated SVGs
+        shell: bash
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/*.svg || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "update: language stats svg"
+            git push origin HEAD:main
+          fi
