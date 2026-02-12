@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
 
     steps:
       - name: Checkout profile repo
@@ -34,16 +34,34 @@ jobs:
             ./self-reposcope --token "${REPOSCOPE_TOKEN}"
           fi
 
-      - name: Commit and push updated SVGs
+      - name: Create pull request for updated SVGs
+        id: cpr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.REPOSCOPE_TOKEN }}
+          commit-message: "update: language stats svg"
+          branch: "automation/update-language-stats"
+          delete-branch: true
+          title: "update: language stats svg"
+          body: |
+            Automated update of language stats SVG.
+          add-paths: |
+            output/*.svg
+
+      - name: Wait for required checks
+        if: steps.cpr.outputs.pull-request-number != ''
         shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.REPOSCOPE_TOKEN }}
+          PR_NUMBER: ${{ steps.cpr.outputs.pull-request-number }}
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/*.svg || true
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "update: language stats svg"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
+          gh pr checks "${PR_NUMBER}" --watch --interval 10
+
+      - name: Merge pull request
+        if: steps.cpr.outputs.pull-request-number != ''
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.REPOSCOPE_TOKEN }}
+          PR_NUMBER: ${{ steps.cpr.outputs.pull-request-number }}
+        run: |
+          gh pr merge "${PR_NUMBER}" --squash --delete-branch
