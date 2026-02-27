@@ -4,7 +4,7 @@
   <img src="./output/full_languages.svg" alt="GitHub language stats across all repositories" />
 </p>
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Languages:**  
   ![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)
