@@ -6,10 +6,6 @@
 
 </div>
 
-<p align="center">
-  <img src="./output/full_languages.svg" alt="GitHub language stats across all repositories" />
-</p>
-
 ## Tech Stack
 
 - **Languages:**  
@@ -34,3 +30,9 @@
   ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
   ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
   ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+
+## Language Usage
+
+<p align="center">
+  <img src="./output/full_languages.svg" alt="GitHub language stats across all repositories" />
+</p>
