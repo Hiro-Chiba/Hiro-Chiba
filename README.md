@@ -1,4 +1,10 @@
-# Hiro Chiba
+<div align="center">
+
+# Hi 👋 I'm Hiro
+
+### Full-Stack Engineer Intern | SaaS Startup in Japan
+
+</div>
 
 <p align="center">
   <img src="./output/full_languages.svg" alt="GitHub language stats across all repositories" />
