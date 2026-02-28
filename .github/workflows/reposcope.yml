@@ -48,20 +48,11 @@ jobs:
           add-paths: |
             output/*.svg
 
-      - name: Wait for required checks
+      - name: Enable auto-merge for pull request
         if: steps.cpr.outputs.pull-request-number != ''
         shell: bash
         env:
           GH_TOKEN: ${{ secrets.REPOSCOPE_TOKEN }}
           PR_NUMBER: ${{ steps.cpr.outputs.pull-request-number }}
         run: |
-          gh pr checks "${PR_NUMBER}" --watch --interval 10
-
-      - name: Merge pull request
-        if: steps.cpr.outputs.pull-request-number != ''
-        shell: bash
-        env:
-          GH_TOKEN: ${{ secrets.REPOSCOPE_TOKEN }}
-          PR_NUMBER: ${{ steps.cpr.outputs.pull-request-number }}
-        run: |
-          gh pr merge "${PR_NUMBER}" --squash --delete-branch
+          gh pr merge "${PR_NUMBER}" --auto --squash --delete-branch
