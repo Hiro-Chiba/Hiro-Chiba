@@ -34,6 +34,14 @@ jobs:
             ./self-reposcope --token "${REPOSCOPE_TOKEN}"
           fi
 
+      - name: Normalize SVG size for full-width display
+        shell: bash
+        run: |
+          if [ -f output/full_languages.svg ]; then
+            sed -E 's#<svg width="([0-9]+)" height="([0-9]+)"#<svg width="100%" viewBox="0 0 \1 \2"#' output/full_languages.svg > output/full_languages.svg.tmp
+            mv output/full_languages.svg.tmp output/full_languages.svg
+          fi
+
       - name: Create pull request for updated SVGs
         id: cpr
         uses: peter-evans/create-pull-request@v6
