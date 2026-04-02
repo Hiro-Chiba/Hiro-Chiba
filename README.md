@@ -35,5 +35,5 @@
 ## Language Usage
 
 <p align="center">
-  <img src="./output/full_languages.svg" alt="GitHub language stats across all repositories" width="520" />
+  <img src="./output/full_languages.svg" alt="GitHub language stats across all repositories" />
 </p>

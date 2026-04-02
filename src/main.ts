@@ -139,7 +139,7 @@ function sharedStyles(): string {
       .border { stroke: #d1d9e0; }
     }
     @media (prefers-color-scheme: dark) {
-      .bg { fill: #0d1117; }
+      .bg { fill: #161b22; }
       .text-primary { fill: #ffffff; }
       .text-secondary { fill: #9198a1; }
       .bar-bg { fill: #30363d; }
