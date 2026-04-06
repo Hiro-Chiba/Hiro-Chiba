@@ -15,24 +15,19 @@ jobs:
       - name: Checkout profile repo
         uses: actions/checkout@v4
 
-      - name: Download self-reposcope binary
-        shell: bash
-        run: |
-          curl -L https://github.com/4okimi7uki/self-reposcope/releases/latest/download/self-reposcope -o self-reposcope
-          chmod +x ./self-reposcope
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
 
       - name: Generate SVG stats
-        shell: bash
         env:
           REPOSCOPE_TOKEN: ${{ secrets.REPOSCOPE_TOKEN }}
           EXCLUDED_LANGUAGES: ${{ secrets.EXCLUDED_LANGUAGES }}
         run: |
-          mkdir -p output
-          if [ -n "${EXCLUDED_LANGUAGES}" ]; then
-            ./self-reposcope --token "${REPOSCOPE_TOKEN}" --excluded-languages "${EXCLUDED_LANGUAGES}"
-          else
-            ./self-reposcope --token "${REPOSCOPE_TOKEN}"
-          fi
+          deno task generate \
+            --token "$REPOSCOPE_TOKEN" \
+            ${EXCLUDED_LANGUAGES:+--excluded-languages "$EXCLUDED_LANGUAGES"}
 
       - name: Create pull request for updated SVGs
         id: cpr
@@ -50,7 +45,6 @@ jobs:
 
       - name: Enable auto-merge for pull request
         if: steps.cpr.outputs.pull-request-number != ''
-        shell: bash
         env:
           GH_TOKEN: ${{ secrets.REPOSCOPE_TOKEN }}
           PR_NUMBER: ${{ steps.cpr.outputs.pull-request-number }}
