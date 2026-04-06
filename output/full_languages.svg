@@ -1,90 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="410" height="230" xmlns="http://www.w3.org/2000/svg">
-<style>text {
-    color: #a89f9bff;
-}
-
-tspan {
-    fill: #f3f3f3;
-}
-
-/* @media (prefers-color-scheme: dark) {
-}
-@media (prefers-color-scheme: light) {
-    tspan {
-        fill: #333;
-        fill: #f3f3f3;
+<svg width="520" height="220" viewBox="0 0 520 220" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @media (prefers-color-scheme: light) {
+      .bg { fill: #ffffff; }
+      .text-primary { fill: #1f2328; }
+      .text-secondary { fill: #656d76; }
+      .bar-bg { fill: #d1d9e0; }
+      .border { stroke: #d1d9e0; }
     }
-} */
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #0d1117; }
+      .text-primary { fill: #ffffff; }
+      .text-secondary { fill: #9198a1; }
+      .bar-bg { fill: #30363d; }
+      .border { stroke: #30363d; }
     }
-    to {
-        opacity: 1;
+    text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
     }
-}
-@keyframes slideIn {
-    from {
-        width: 0;
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
-    to {
-        width: 660;
+    @keyframes slideIn {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
     }
-}
-
-#lang_legend,
-#title {
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
-}
-#bar_back {
-    animation: slideIn 1.7s ease-in forwards;
-}
-</style>
-<rect id="border" x="1" y="1" width="408" height="228" fill='#19140fff' stroke-width="1" rx="15" ry="15" />
-<text id="title" x="20" y="40" font-size="18" font-weight="bold" fill='#db4c0fff' font-family="system-ui, -apple-system, sans-serif">Most Used Languages</text>
-
-<defs>
-    <clipPath id="roundedClip">
-        <rect id="bar_back" x="20" y="60" width="370" height="10" rx="5" ry="5">
-        </rect>
-    </clipPath>
-</defs>
-<rect width="370" height="10" x="20" y="60" rx="5" ry="5" fill='#ccc' />
-<g clip-path="url(#roundedClip)">
-    <rect x="20" y="60" width="212" height="10" fill="#dea584"> <title>Rust 57.38%</title> </rect>
-    <rect x="232" y="60" width="134" height="10" fill="#3178c6"> <title>TypeScript 36.22%</title> </rect>
-    <rect x="366" y="60" width="12" height="10" fill="#663399"> <title>CSS 3.27%</title> </rect>
-    <rect x="378" y="60" width="8" height="10" fill="#3572A5"> <title>Python 2.30%</title> </rect>
-    <rect x="386" y="60" width="3" height="10" fill="#f1e05a"> <title>JavaScript 0.78%</title> </rect>
-    <rect x="389" y="60" width="0" height="10" fill="#c7254e"> <title>jq 0.02%</title> </rect>
-    <rect x="389" y="60" width="0" height="10" fill="#e34c26"> <title>HTML 0.02%</title> </rect>
-    <rect x="389" y="60" width="0" height="10" fill="#384d54"> <title>Just 0.01%</title> </rect>
-    <rect x="389" y="60" width="0" height="10" fill="#427819"> <title>Makefile 0.01%</title> </rect>
-    <rect x="389" y="60" width="0" height="10" fill="#384d54"> <title>Dockerfile 0.01%</title> </rect>
-</g>
-<g id="lang_legend">
-<circle cx="30" cy="100" r="6" fill="#dea584" />
-<text x="46" y="104" font-size="13" font-family="system-ui, -apple-system, sans-serif" fill='currentColor'><tspan>Rust</tspan> 57.38%</text>
-<circle cx="225" cy="100" r="6" fill="#3178c6" />
-<text x="241" y="104" font-size="13" font-family="system-ui, -apple-system, sans-serif" fill='currentColor'><tspan>TypeScript</tspan> 36.22%</text>
-<circle cx="30" cy="124" r="6" fill="#663399" />
-<text x="46" y="128" font-size="13" font-family="system-ui, -apple-system, sans-serif" fill='currentColor'><tspan>CSS</tspan> 3.27%</text>
-<circle cx="225" cy="124" r="6" fill="#3572A5" />
-<text x="241" y="128" font-size="13" font-family="system-ui, -apple-system, sans-serif" fill='currentColor'><tspan>Python</tspan> 2.30%</text>
-<circle cx="30" cy="148" r="6" fill="#f1e05a" />
-<text x="46" y="152" font-size="13" font-family="system-ui, -apple-system, sans-serif" fill='currentColor'><tspan>JavaScript</tspan> 0.78%</text>
-<circle cx="225" cy="148" r="6" fill="#c7254e" />
-<text x="241" y="152" font-size="13" font-family="system-ui, -apple-system, sans-serif" fill='currentColor'><tspan>jq</tspan> 0.02%</text>
-<circle cx="30" cy="172" r="6" fill="#e34c26" />
-<text x="46" y="176" font-size="13" font-family="system-ui, -apple-system, sans-serif" fill='currentColor'><tspan>HTML</tspan> 0.02%</text>
-<circle cx="225" cy="172" r="6" fill="#384d54" />
-<text x="241" y="176" font-size="13" font-family="system-ui, -apple-system, sans-serif" fill='currentColor'><tspan>Just</tspan> 0.01%</text>
-<circle cx="30" cy="196" r="6" fill="#427819" />
-<text x="46" y="200" font-size="13" font-family="system-ui, -apple-system, sans-serif" fill='currentColor'><tspan>Makefile</tspan> 0.01%</text>
-<circle cx="225" cy="196" r="6" fill="#384d54" />
-<text x="241" y="200" font-size="13" font-family="system-ui, -apple-system, sans-serif" fill='currentColor'><tspan>Dockerfile</tspan> 0.01%</text>
-</g>
+  </style>
+  <rect class="bg border" width="520" height="220" rx="12" stroke-width="1" />
+    <circle cx="110" cy="110" r="65"
+    fill="none" class="bar-bg" stroke-width="22" />
+    <circle cx="110" cy="110" r="65"
+        fill="none" stroke="#dea584" stroke-width="22"
+        stroke-dasharray="233.9 174.5"
+        transform="rotate(-90.00 110 110)"
+        style="animation: fadeIn 0.4s ease 0.10s both">
+        <title>Rust 57.27%</title>
+      </circle>
+    <circle cx="110" cy="110" r="65"
+        fill="none" stroke="#3178c6" stroke-width="22"
+        stroke-dasharray="147.7 260.8"
+        transform="rotate(116.18 110 110)"
+        style="animation: fadeIn 0.4s ease 0.16s both">
+        <title>TypeScript 36.15%</title>
+      </circle>
+    <circle cx="110" cy="110" r="65"
+        fill="none" stroke="#663399" stroke-width="22"
+        stroke-dasharray="13.3 395.1"
+        transform="rotate(246.34 110 110)"
+        style="animation: fadeIn 0.4s ease 0.22s both">
+        <title>CSS 3.26%</title>
+      </circle>
+    <circle cx="110" cy="110" r="65"
+        fill="none" stroke="#3572A5" stroke-width="22"
+        stroke-dasharray="9.4 399.1"
+        transform="rotate(258.07 110 110)"
+        style="animation: fadeIn 0.4s ease 0.28s both">
+        <title>Python 2.29%</title>
+      </circle>
+    <circle cx="110" cy="110" r="65"
+        fill="none" stroke="#f1e05a" stroke-width="22"
+        stroke-dasharray="3.9 404.5"
+        transform="rotate(266.32 110 110)"
+        style="animation: fadeIn 0.4s ease 0.34s both">
+        <title>JavaScript 0.96%</title>
+      </circle>
+    <circle cx="110" cy="110" r="65"
+        fill="none" stroke="#8b8b8b" stroke-width="22"
+        stroke-dasharray="0.5 407.9"
+        transform="rotate(269.77 110 110)"
+        style="animation: fadeIn 0.4s ease 0.40s both">
+        <title>Other 0.06%</title>
+      </circle>
+  <text x="110" y="106" text-anchor="middle" class="text-primary" font-size="24" font-weight="700"
+        style="animation: fadeIn 0.4s ease 0.20s both">5</text>
+  <text x="110" y="124" text-anchor="middle" class="text-secondary" font-size="11"
+        style="animation: fadeIn 0.4s ease 0.30s both">Languages</text>
+    <g style="animation: fadeIn 0.4s ease 0.30s both">
+        <circle cx="230" cy="37" r="4" fill="#dea584" />
+        <text x="242" y="41" font-size="12" font-weight="500" class="text-primary">Rust</text>
+        <rect x="330" y="31" width="120.0" height="12" rx="3" fill="#dea584" />
+        <text x="458" y="41" font-size="11" class="text-secondary">57.3%</text>
+      </g>
+    <g style="animation: fadeIn 0.4s ease 0.35s both">
+        <circle cx="230" cy="63" r="4" fill="#3178c6" />
+        <text x="242" y="67" font-size="12" font-weight="500" class="text-primary">TypeScript</text>
+        <rect x="330" y="57" width="106.7" height="12" rx="3" fill="#3178c6" />
+        <text x="444.7134842891957" y="67" font-size="11" class="text-secondary">36.2%</text>
+      </g>
+    <g style="animation: fadeIn 0.4s ease 0.40s both">
+        <circle cx="230" cy="89" r="4" fill="#663399" />
+        <text x="242" y="93" font-size="12" font-weight="500" class="text-primary">CSS</text>
+        <rect x="330" y="83" width="42.8" height="12" rx="3" fill="#663399" />
+        <text x="380.78438101140557" y="93" font-size="11" class="text-secondary">3.3%</text>
+      </g>
+    <g style="animation: fadeIn 0.4s ease 0.45s both">
+        <circle cx="230" cy="115" r="4" fill="#3572A5" />
+        <text x="242" y="119" font-size="12" font-weight="500" class="text-primary">Python</text>
+        <rect x="330" y="109" width="35.2" height="12" rx="3" fill="#3572A5" />
+        <text x="373.16153484921523" y="119" font-size="11" class="text-secondary">2.3%</text>
+      </g>
+    <g style="animation: fadeIn 0.4s ease 0.50s both">
+        <circle cx="230" cy="141" r="4" fill="#f1e05a" />
+        <text x="242" y="145" font-size="12" font-weight="500" class="text-primary">JavaScript</text>
+        <rect x="330" y="135" width="19.8" height="12" rx="3" fill="#f1e05a" />
+        <text x="357.83712809375174" y="145" font-size="11" class="text-secondary">1.0%</text>
+      </g>
+    <g style="animation: fadeIn 0.4s ease 0.55s both">
+        <circle cx="230" cy="167" r="4" fill="#8b8b8b" />
+        <text x="242" y="171" font-size="12" font-weight="500" class="text-primary">Other</text>
+        <rect x="330" y="161" width="4.0" height="12" rx="3" fill="#8b8b8b" />
+        <text x="342" y="171" font-size="11" class="text-secondary"><0.1%</text>
+      </g>
 </svg>
