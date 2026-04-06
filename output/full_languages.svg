@@ -32,45 +32,45 @@
     fill="none" class="bar-bg" stroke-width="22" />
     <circle cx="110" cy="110" r="65"
         fill="none" stroke="#dea584" stroke-width="22"
-        stroke-dasharray="233.8 174.6"
+        stroke-dasharray="240.3 168.2"
         transform="rotate(-90.00 110 110)"
         style="animation: fadeIn 0.4s ease 0.10s both">
-        <title>Rust 57.26%</title>
+        <title>Rust 58.83%</title>
       </circle>
     <circle cx="110" cy="110" r="65"
         fill="none" stroke="#3178c6" stroke-width="22"
-        stroke-dasharray="147.6 260.8"
-        transform="rotate(116.13 110 110)"
+        stroke-dasharray="151.7 256.7"
+        transform="rotate(121.78 110 110)"
         style="animation: fadeIn 0.4s ease 0.16s both">
-        <title>TypeScript 36.14%</title>
-      </circle>
-    <circle cx="110" cy="110" r="65"
-        fill="none" stroke="#663399" stroke-width="22"
-        stroke-dasharray="13.3 395.1"
-        transform="rotate(246.25 110 110)"
-        style="animation: fadeIn 0.4s ease 0.22s both">
-        <title>CSS 3.26%</title>
+        <title>TypeScript 37.13%</title>
       </circle>
     <circle cx="110" cy="110" r="65"
         fill="none" stroke="#3572A5" stroke-width="22"
-        stroke-dasharray="9.4 399.1"
-        transform="rotate(257.98 110 110)"
-        style="animation: fadeIn 0.4s ease 0.28s both">
-        <title>Python 2.29%</title>
+        stroke-dasharray="9.6 398.8"
+        transform="rotate(255.46 110 110)"
+        style="animation: fadeIn 0.4s ease 0.22s both">
+        <title>Python 2.35%</title>
       </circle>
     <circle cx="110" cy="110" r="65"
         fill="none" stroke="#f1e05a" stroke-width="22"
-        stroke-dasharray="4.0 404.4"
-        transform="rotate(266.23 110 110)"
+        stroke-dasharray="4.1 404.3"
+        transform="rotate(263.93 110 110)"
+        style="animation: fadeIn 0.4s ease 0.28s both">
+        <title>JavaScript 1.01%</title>
+      </circle>
+    <circle cx="110" cy="110" r="65"
+        fill="none" stroke="#89e051" stroke-width="22"
+        stroke-dasharray="2.5 405.9"
+        transform="rotate(267.57 110 110)"
         style="animation: fadeIn 0.4s ease 0.34s both">
-        <title>JavaScript 0.98%</title>
+        <title>Shell 0.61%</title>
       </circle>
     <circle cx="110" cy="110" r="65"
         fill="none" stroke="#8b8b8b" stroke-width="22"
         stroke-dasharray="0.5 407.9"
-        transform="rotate(269.77 110 110)"
+        transform="rotate(269.76 110 110)"
         style="animation: fadeIn 0.4s ease 0.40s both">
-        <title>Other 0.06%</title>
+        <title>Other 0.07%</title>
       </circle>
   <text x="110" y="106" text-anchor="middle" class="text-primary" font-size="24" font-weight="700"
         style="animation: fadeIn 0.4s ease 0.20s both">5</text>
@@ -80,31 +80,31 @@
         <circle cx="230" cy="37" r="4" fill="#dea584" />
         <text x="242" y="41" font-size="12" font-weight="500" class="text-primary">Rust</text>
         <rect x="330" y="31" width="120.0" height="12" rx="3" fill="#dea584" />
-        <text x="458" y="41" font-size="11" class="text-secondary">57.3%</text>
+        <text x="458" y="41" font-size="11" class="text-secondary">58.8%</text>
       </g>
     <g style="animation: fadeIn 0.4s ease 0.35s both">
         <circle cx="230" cy="63" r="4" fill="#3178c6" />
         <text x="242" y="67" font-size="12" font-weight="500" class="text-primary">TypeScript</text>
-        <rect x="330" y="57" width="106.7" height="12" rx="3" fill="#3178c6" />
-        <text x="444.71276238937105" y="67" font-size="11" class="text-secondary">36.1%</text>
+        <rect x="330" y="57" width="106.8" height="12" rx="3" fill="#3178c6" />
+        <text x="444.7913967469" y="67" font-size="11" class="text-secondary">37.1%</text>
       </g>
     <g style="animation: fadeIn 0.4s ease 0.40s both">
-        <circle cx="230" cy="89" r="4" fill="#663399" />
-        <text x="242" y="93" font-size="12" font-weight="500" class="text-primary">CSS</text>
-        <rect x="330" y="83" width="42.8" height="12" rx="3" fill="#663399" />
-        <text x="380.78125675531516" y="93" font-size="11" class="text-secondary">3.3%</text>
+        <circle cx="230" cy="89" r="4" fill="#3572A5" />
+        <text x="242" y="93" font-size="12" font-weight="500" class="text-primary">Python</text>
+        <rect x="330" y="83" width="35.5" height="12" rx="3" fill="#3572A5" />
+        <text x="373.48410961926265" y="93" font-size="11" class="text-secondary">2.4%</text>
       </g>
     <g style="animation: fadeIn 0.4s ease 0.45s both">
-        <circle cx="230" cy="115" r="4" fill="#3572A5" />
-        <text x="242" y="119" font-size="12" font-weight="500" class="text-primary">Python</text>
-        <rect x="330" y="109" width="35.2" height="12" rx="3" fill="#3572A5" />
-        <text x="373.1584612621537" y="119" font-size="11" class="text-secondary">2.3%</text>
+        <circle cx="230" cy="115" r="4" fill="#f1e05a" />
+        <text x="242" y="119" font-size="12" font-weight="500" class="text-primary">JavaScript</text>
+        <rect x="330" y="109" width="20.5" height="12" rx="3" fill="#f1e05a" />
+        <text x="358.4807046543398" y="119" font-size="11" class="text-secondary">1.0%</text>
       </g>
     <g style="animation: fadeIn 0.4s ease 0.50s both">
-        <circle cx="230" cy="141" r="4" fill="#f1e05a" />
-        <text x="242" y="145" font-size="12" font-weight="500" class="text-primary">JavaScript</text>
-        <rect x="330" y="135" width="20.2" height="12" rx="3" fill="#f1e05a" />
-        <text x="358.21633421545795" y="145" font-size="11" class="text-secondary">1.0%</text>
+        <circle cx="230" cy="141" r="4" fill="#89e051" />
+        <text x="242" y="145" font-size="12" font-weight="500" class="text-primary">Shell</text>
+        <rect x="330" y="135" width="13.9" height="12" rx="3" fill="#89e051" />
+        <text x="351.92688680695" y="145" font-size="11" class="text-secondary">0.6%</text>
       </g>
     <g style="animation: fadeIn 0.4s ease 0.55s both">
         <circle cx="230" cy="167" r="4" fill="#8b8b8b" />
