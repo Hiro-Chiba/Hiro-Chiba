@@ -223,7 +223,7 @@ function generateDesignA(languages: LanguageStat[]): string {
 
 function formatPct(pct: number): string {
   if (pct >= 0.1) return `${pct.toFixed(1)}%`;
-  return "<0.1%";
+  return "&lt;0.1%";
 }
 
 function generateDesignB(languages: LanguageStat[]): string {
