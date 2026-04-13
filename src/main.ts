@@ -231,12 +231,16 @@ function generateDesignB(languages: LanguageStat[]): string {
   const allSegments = languages;
   const totalLanguages = allSegments.filter((l) => l.name !== "Other").length;
   const width = 520;
-  const height = 220;
   const r = 65;
   const strokeWidth = 22;
   const circumference = 2 * Math.PI * r;
   const donutCx = 110;
   const donutCy = 110;
+  const listStartY = 30;
+  const listRowHeight = 26;
+  const listBottom = listStartY + allSegments.length * listRowHeight;
+  const donutBottom = donutCy + r + strokeWidth / 2;
+  const height = Math.max(donutBottom, listBottom) + 20;
 
   // Background ring for donut guide
   const bgRing = `<circle cx="${donutCx}" cy="${donutCy}" r="${r}"
@@ -260,8 +264,6 @@ function generateDesignB(languages: LanguageStat[]): string {
 
   // Right-side legend with horizontal bars (log scale for visibility)
   const listX = 230;
-  const listStartY = 30;
-  const listRowHeight = 26;
   const barMaxW = 120;
   const maxLogPct = Math.log10(Math.max(...allSegments.map((l) => l.percentage)) + 1);
 
