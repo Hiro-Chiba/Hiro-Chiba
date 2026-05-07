@@ -115,14 +115,12 @@ async function aggregateLanguages(): Promise<LanguageStat[]> {
     .filter((l) => l.percentage < minPercentage)
     .reduce((s, l) => s + l.percentage, 0);
 
-  if (otherPct > 0) {
-    visible.push({
-      name: "Other",
-      bytes: 0,
-      percentage: otherPct,
-      color: DEFAULT_COLOR,
-    });
-  }
+  visible.push({
+    name: "Other",
+    bytes: 0,
+    percentage: otherPct,
+    color: DEFAULT_COLOR,
+  });
 
   return visible;
 }
