@@ -4,7 +4,7 @@
 
 ### Full-Stack Engineer Intern | SaaS Startup in Japan
 
-<img src="https://cdn.dribbble.com/users/1292677/screenshots/6139167/media/fcf7fd0c619bb87706533079240915f3.gif" width="400" alt="coding animation"/>
+<!-- <img src="https://cdn.dribbble.com/users/1292677/screenshots/6139167/media/fcf7fd0c619bb87706533079240915f3.gif" width="400" alt="coding animation"/> -->
 
 </div>
 
@@ -31,6 +31,8 @@
 - **Learning / Hobby:**  
   ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
   ![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)
+  ![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=flat&logo=ruby&logoColor=white)
+  ![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white)
 
 ## Language Usage
 
