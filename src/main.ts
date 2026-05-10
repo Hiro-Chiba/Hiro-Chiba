@@ -224,6 +224,19 @@ function formatPct(pct: number): string {
   return "&lt;0.1%";
 }
 
+function fitFontSize(
+  text: string,
+  maxWidth: number,
+  baseFontSize: number,
+  minFontSize = 9,
+  charWidthRatio = 0.58,
+): number {
+  const estimatedWidth = text.length * baseFontSize * charWidthRatio;
+  if (estimatedWidth <= maxWidth) return baseFontSize;
+  const scaled = (baseFontSize * maxWidth) / estimatedWidth;
+  return Math.max(minFontSize, Math.round(scaled * 10) / 10);
+}
+
 function generateDesignB(languages: LanguageStat[]): string {
   // languages already includes "Other" from aggregation if applicable
   const allSegments = languages;
@@ -265,13 +278,15 @@ function generateDesignB(languages: LanguageStat[]): string {
   const barMaxW = 120;
   const maxLogPct = Math.log10(Math.max(...allSegments.map((l) => l.percentage)) + 1);
 
+  const nameMaxWidth = 84;
   const listEntries = allSegments
     .map((lang, i) => {
       const y = listStartY + i * listRowHeight;
       const logBarW = Math.max((Math.log10(lang.percentage + 1) / maxLogPct) * barMaxW, 4);
+      const nameFontSize = fitFontSize(lang.name, nameMaxWidth, 12);
       return `<g style="animation: fadeIn 0.4s ease ${(0.30 + i * 0.05).toFixed(2)}s both">
         <circle cx="${listX}" cy="${y + 7}" r="4" fill="${lang.color}" />
-        <text x="${listX + 12}" y="${y + 11}" font-size="12" font-weight="500" class="text-primary">${lang.name}</text>
+        <text x="${listX + 12}" y="${y + 11}" font-size="${nameFontSize}" font-weight="500" class="text-primary">${lang.name}</text>
         <rect x="${listX + 100}" y="${y + 1}" width="${logBarW.toFixed(1)}" height="12" rx="3" fill="${lang.color}" />
         <text x="${listX + 100 + logBarW + 8}" y="${y + 11}" font-size="11" class="text-secondary">${formatPct(lang.percentage)}</text>
       </g>`;
