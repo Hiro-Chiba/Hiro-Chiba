@@ -35,19 +35,19 @@
         stroke-dasharray="174.9 233.5"
         transform="rotate(-90.00 110 110)"
         style="animation: fadeIn 0.4s ease 0.10s both">
-        <title>TypeScript 42.82%</title>
+        <title>TypeScript 42.83%</title>
       </circle>
     <circle cx="110" cy="110" r="65"
         fill="none" stroke="#dea584" stroke-width="22"
         stroke-dasharray="158.8 249.6"
-        transform="rotate(64.15 110 110)"
+        transform="rotate(64.17 110 110)"
         style="animation: fadeIn 0.4s ease 0.16s both">
         <title>Rust 38.89%</title>
       </circle>
     <circle cx="110" cy="110" r="65"
         fill="none" stroke="#555555" stroke-width="22"
         stroke-dasharray="33.4 375.0"
-        transform="rotate(204.15 110 110)"
+        transform="rotate(204.16 110 110)"
         style="animation: fadeIn 0.4s ease 0.22s both">
         <title>C 8.17%</title>
       </circle>
@@ -93,31 +93,31 @@
         <circle cx="230" cy="63" r="4" fill="#dea584" />
         <text x="242" y="67" font-size="12" font-weight="500" class="text-primary">Rust</text>
         <rect x="330" y="57" width="117.0" height="12" rx="3" fill="#dea584" />
-        <text x="455.01798952160834" y="67" font-size="11" class="text-secondary">38.9%</text>
+        <text x="455.01047794729686" y="67" font-size="11" class="text-secondary">38.9%</text>
       </g>
     <g style="animation: fadeIn 0.4s ease 0.40s both">
         <circle cx="230" cy="89" r="4" fill="#555555" />
         <text x="242" y="93" font-size="12" font-weight="500" class="text-primary">C</text>
         <rect x="330" y="83" width="70.4" height="12" rx="3" fill="#555555" />
-        <text x="408.3563913656442" y="93" font-size="11" class="text-secondary">8.2%</text>
+        <text x="408.35085624904866" y="93" font-size="11" class="text-secondary">8.2%</text>
       </g>
     <g style="animation: fadeIn 0.4s ease 0.45s both">
         <circle cx="230" cy="115" r="4" fill="#3572A5" />
         <text x="242" y="119" font-size="12" font-weight="500" class="text-primary">Python</text>
         <rect x="330" y="109" width="64.4" height="12" rx="3" fill="#3572A5" />
-        <text x="402.38481672905834" y="119" font-size="11" class="text-secondary">6.6%</text>
+        <text x="402.37957405880616" y="119" font-size="11" class="text-secondary">6.6%</text>
       </g>
     <g style="animation: fadeIn 0.4s ease 0.50s both">
         <circle cx="230" cy="141" r="4" fill="#f1e05a" />
         <text x="242" y="145" font-size="12" font-weight="500" class="text-primary">JavaScript</text>
         <rect x="330" y="135" width="43.1" height="12" rx="3" fill="#f1e05a" />
-        <text x="381.0793265766256" y="145" font-size="11" class="text-secondary">2.9%</text>
+        <text x="381.0752788884237" y="145" font-size="11" class="text-secondary">2.9%</text>
       </g>
     <g style="animation: fadeIn 0.4s ease 0.55s both">
         <circle cx="230" cy="167" r="4" fill="#89e051" />
         <text x="242" y="171" font-size="12" font-weight="500" class="text-primary">Shell</text>
         <rect x="330" y="161" width="15.6" height="12" rx="3" fill="#89e051" />
-        <text x="353.5693429170795" y="171" font-size="11" class="text-secondary">0.6%</text>
+        <text x="353.5674814043932" y="171" font-size="11" class="text-secondary">0.6%</text>
       </g>
     <g style="animation: fadeIn 0.4s ease 0.60s both">
         <circle cx="230" cy="193" r="4" fill="#8b8b8b" />
