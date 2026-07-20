@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Generate contribution graph SVGs
-        uses: abozanona/pacman-contribution-graph@v3.2.8
+        uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
           games: "pacman"
