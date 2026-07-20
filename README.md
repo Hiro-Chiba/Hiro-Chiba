@@ -1,8 +1,5 @@
 <a href="https://github.com/Hiro-Chiba">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hiro-Chiba/Hiro-Chiba/main/assets/profile-card-dark.svg">
-    <img alt="Hiro's GitHub profile" src="https://raw.githubusercontent.com/Hiro-Chiba/Hiro-Chiba/main/assets/profile-card-light.svg">
-  </picture>
+  <img alt="Hiro's GitHub profile" src="./assets/profile.svg">
 </a>
 
 ## Stack
