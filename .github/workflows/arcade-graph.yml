@@ -11,14 +11,13 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    env:
-      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: "true"
 
     steps:
       - name: Generate contribution graph SVGs
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.REPOSCOPE_TOKEN }}
           games: "pacman"
 
       - name: Push SVGs to the output branch
