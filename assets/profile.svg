@@ -9,54 +9,54 @@
   font-display: swap;
   size-adjust: 109%;
 }
-.body { fill: #24292f; }
-.key { fill: #953800; }
-.value { fill: #0a3069; }
-.muted { fill: #c2cfde; }
+.body { fill: #c9d1d9; }
+.key { fill: #ffa657; }
+.value { fill: #a5d6ff; }
+.muted { fill: #616e7f; }
 .ascii { font-size: 14px; }
 text { white-space: pre; font-variant-ligatures: none; }
 </style>
-<rect width="1100" height="620" rx="15" fill="#f6f8fa"/>
+<rect width="1100" height="620" rx="15" fill="#161b22"/>
 <text x="15" y="20" class="body ascii">                           ,.</text>
-<text x="15" y="35" class="body ascii">                        .,;r;irrr;:,..</text>
-<text x="15" y="50" class="body ascii">                   .rAAXsXAAA5222255Xr;:</text>
-<text x="15" y="65" class="body ascii">            ,,;irsrX33553hh3hh5522552A252r:,</text>
-<text x="15" y="80" class="body ascii">          ;AXsXXsA33355hMhhMHMhh35AAXAAAA22As.</text>
-<text x="15" y="95" class="body ascii">        .X52AAAAXXA25hHGMMHHGHHHMhhh3555223hhs,</text>
-<text x="15" y="110" class="body ascii">       :A335555hMHM3hGSGGGGGGGGGGGGGMh5353253h2,</text>
-<text x="15" y="125" class="body ascii">      :rX3h333hHHG3s5GSGSGSSSSSSSSSSSGHMMMh22255:</text>
-<text x="15" y="140" class="body ascii">     ,is3HMMhhMHM52MSSGSGSSSSSSSSSSSSSSSGGGM35Ahs</text>
-<text x="15" y="155" class="body ascii">    .;sAhMhMMHHM5h##SSGHHGSS#S#SSSSS###SSS#SHMh33;</text>
-<text x="15" y="170" class="body ascii">   ,rrs3hMhMGHHhHSSSHh55555hhHMhh33hhMHGGGGSSGH332:</text>
-<text x="15" y="185" class="body ascii">   .,:2HGGGGHHHHGGHh5AXXssssssssXXXXAA23MMhM#SGhM2:</text>
-<text x="15" y="200" class="body ascii">    .XhHGGHGHHHGGM35AAXXsXXssssXXssssXXA255hGGGHH5;,</text>
-<text x="15" y="215" class="body ascii">    ;AhHGGGGGGGHM3522AAAAAAAAAAAAAAXXsXXA253hMGGG5:,</text>
-<text x="15" y="230" class="body ascii">    ,XHGHHGSGSHMh35222AAAAXAAAAAAAAXsXXXXA2225GSSM,</text>
-<text x="15" y="245" class="body ascii">     ;HGHGSSGHH33552AAXXXXXsXXAXXXsrrrrrssXXXAG#5i</text>
-<text x="15" y="260" class="body ascii">      :5#S#Sh5352AXsrrrriiirrXXssriirrriiirrrXhh.</text>
-<text x="15" y="275" class="body ascii">        2SShAXAAXAA222222AXXsrrssXA2222AAAAssrAX,</text>
-<text x="15" y="290" class="body ascii">      :rrhhAXA533hMHHHHHMh5AXAXXAA5HGGHHMMMh32X5X,</text>
-<text x="15" y="305" class="body ascii">      3Gh33XAA533222553555555525333hMHMh322532sAi</text>
-<text x="15" y="320" class="body ascii">      iM335XAA552333@@@@333352A5hMhh3h@@@@Mh5Asr:</text>
-<text x="15" y="335" class="body ascii">       2HM2XXA225352####h3335Xis3h3352####5Asrri,</text>
-<text x="15" y="350" class="body ascii">       ;hh2XXXXAAA2255555522As;iA2222222AXsr;;ir</text>
-<text x="15" y="365" class="body ascii">        :X22AsXXXXXAAAAXXXXXXsiisXXsrrrrrrriiisi</text>
-<text x="15" y="380" class="body ascii">         .iAAXAAXXXsssrssXAAAXiisAAAsriiiiiirrX:</text>
-<text x="15" y="395" class="body ascii">            iX22AXXXXXXA22AAXri;rrXA2XXssrrrsXr</text>
-<text x="15" y="410" class="body ascii">            ,XA22AAAA22225XssrrrirsXA2AAXXXXXsi</text>
-<text x="15" y="425" class="body ascii">             XXA2A22552AX###322225###sXXAA22Ar.</text>
-<text x="15" y="440" class="body ascii">             rX2A22222AXssA553hh35AsrsXXsX222:</text>
-<text x="15" y="455" class="body ascii">              ;A222AAA222A22553522AA255AXX25r</text>
-<text x="15" y="470" class="body ascii">               .X55*#***#***#***#***#***X5hr</text>
-<text x="15" y="485" class="body ascii">                :5555AXsssXA2AAAAAAAsrsX53A,</text>
-<text x="15" y="500" class="body ascii">              .is2222AAAXXsXA225222AsXA53AAAi,</text>
-<text x="15" y="515" class="body ascii">            ,r5MAA22222XXsXXXXAAAAXsssA2XrhM3AXsr:</text>
-<text x="15" y="530" class="body ascii">         .:s253G5XAAA222AXssrrrrrrrrrXAsi2HMMMMHhAr;,</text>
-<text x="15" y="545" class="body ascii">      .:X25553hGH2AXAA22222222222222AXsisMGHGGHMh552Xri;</text>
-<text x="15" y="560" class="body ascii">    ,iA535AA25hMGh2AA2A2A2253hhh335AsrrXMSGGGHM35533352X</text>
-<text x="15" y="575" class="body ascii"> ,r222225533hMhhGM22222A2222555552AsrrAH#GGGHhh3hhhhh55A</text>
-<text x="15" y="590" class="body ascii">2HH5255hHS99BBSMGM5255222222AAA2AAXss2G#GGGGMMMMMhhh3525</text>
-<text x="15" y="605" class="body ascii">HMh3hH#9BBB999BSGH523352225522222AXX2G#SSGGHMMMMh3hhh322</text>
+<text x="15" y="35" class="body ascii">                        ,:rrrrisirri;:</text>
+<text x="15" y="50" class="body ascii">                   ,r;;A25555AA2XXrs52s:</text>
+<text x="15" y="65" class="body ascii">            ,:;;rirXriXAArrXssAAAAssAAXiii;,</text>
+<text x="15" y="80" class="body ascii">          ,rA22535rrrXXsisssirsXXX2252222AXXi,</text>
+<text x="15" y="95" class="body ascii">        ;;rA2255h35AXsi;rri;;;iissXsAAXX2As;;s:</text>
+<text x="15" y="110" class="body ascii">       rrrsAAAAsr;:rr:,;i;;ii;;ii;;isXAXXXAAr::;</text>
+<text x="15" y="125" class="body ascii">     :ssXsssXssi:,A32i:;:;;;::;;;:::;irssrXAAAsi:</text>
+<text x="15" y="140" class="body ascii">     riri;irrsr;iX2X:,::::::::::,::,,,::;iisAA2ii</text>
+<text x="15" y="155" class="body ascii">    ;rissisrr;;rAs. ,:iri;;,,,,,:::,,,,,,,.:rsXX;;</text>
+<text x="15" y="170" class="body ascii">   :,iXssrrr;;isr,,;sAA2252AXrsAAAAAAXi;;i;,,iiXX;,</text>
+<text x="15" y="185" class="body ascii">   ,:rs;i;i;i;ii:;sX25553hhhhhhh3333552AsrXs,::sir,</text>
+<text x="15" y="200" class="body ascii">    :;ii:;;;;;;;;rXA225553333h3353535552AAXX:;,i:;:.</text>
+<text x="15" y="215" class="body ascii">    ,isi:;i:;;iirXXAAA2AAA222222AA2225552AXXXs;;i;:,</text>
+<text x="15" y="230" class="body ascii">    .i;:ii;::,irsXAAXX2AA222AAAAAAA5352552A222i:,.:</text>
+<text x="15" y="245" class="body ascii">     :.:ii::iiiXXsXA253335533525533hhhhhh33335; ;.</text>
+<text x="15" y="260" class="body ascii">      ,;.:.;XAXA225333hhMMhh35533hhMMhhMMMhhhhs:,</text>
+<text x="15" y="275" class="body ascii">        r,:A352255555555533333h333353333333hhh52X</text>
+<text x="15" y="290" class="body ascii">      rsrrs552Xsr;,....,:iX5555355A:,,:;::,;i25:A,</text>
+<text x="15" y="305" class="body ascii">      , ssX522XrsA2AAXsXAXXXXsXXXXXsrirsXAAXrA32s</text>
+<text x="15" y="320" class="body ascii">      i;ssA5A2XXAsir    rssss25Ai:;iXs    ,iX2hM;</text>
+<text x="15" y="335" class="body ascii">       s::2522AXsiA2....isXrshHhXrXsAA....23MMhM;</text>
+<text x="15" y="350" class="body ascii">       iir255555222XXAXXXA222hHH5222AXAAA5hMHHHA</text>
+<text x="15" y="365" class="body ascii">        i2XX555555555553355553HH3553hhMhhhhMMMH.</text>
+<text x="15" y="380" class="body ascii">         ,rr252555533333552AA5MM5AX23MMMhhhhhh3</text>
+<text x="15" y="395" class="body ascii">            s5XX225555352sAA3hMMMh5XX3h3hhhh352</text>
+<text x="15" y="410" class="body ascii">            :52XA2222AXssr53hMMMMMh5XssA233523r</text>
+<text x="15" y="425" class="body ascii">             X5AAAAAXsA53. .s2552s . h52AXAA22,</text>
+<text x="15" y="440" class="body ascii">             :2AAAAAXA25332Asiiiis2hMh3535AAXi</text>
+<text x="15" y="455" class="body ascii">              iXXAA22AssX222AXXXAA25AriX552rs</text>
+<text x="15" y="470" class="body ascii">               :ssXsX255... ... ...552Xs52:;</text>
+<text x="15" y="485" class="body ascii">                sXssX2553335222222253hh5X;;,</text>
+<text x="15" y="500" class="body ascii">              ;X22AAA2222555AAssrsX252Ari5Xss;</text>
+<text x="15" y="515" class="body ascii">            iAA:52AAAA25555555555533332s3hriA22si,</text>
+<text x="15" y="530" class="body ascii">         :rsXAX.25222AXX53333h3hhhhhh5AhM5;issi;r2Ar,</text>
+<text x="15" y="545" class="body ascii">      ,rsssrXss.i25222AAXXA2555252AXsAhMMr;i;::isXA22XXi</text>
+<text x="15" y="560" class="body ascii">    iXXsrXA22Asr,X222AAAAAXsi;;iiis23hhhs:;;:isXXAXssAX:</text>
+<text x="15" y="575" class="body ascii"> ;rrAAA2AA22Asss.sAAAAAAAAAAAAAAA253hhhr,;;;irsssrrrrXXr</text>
+<text x="15" y="590" class="body ascii">s::AA22As;,.. ;s,sAAsXAAXAAAA2AAA253h3i,:;;;irri;rrrsXAi</text>
+<text x="15" y="605" class="body ascii">;;ssr;.   ..,..;:iAAXrXAAXXXXXXXA2552,.:;;;iriiissrrssAA</text>
 <text x="500" y="28" class="body">Hiro</text>
 <text x="545" y="28" class="muted">-----------------------------------------------------------</text>
 <text x="500" y="66" class="body">01 / PROFILE</text>
