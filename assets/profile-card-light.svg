@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540" font-family="ConsolasFallback,Consolas,Menlo,monospace" font-size="16px" role="img" aria-labelledby="title desc">
+<title id="title">Hiro profile card</title>
+<desc id="desc">An ASCII portrait of Hiro beside profile and technology information.</desc>
+<style>
+@font-face {
+  src: local('Consolas'), local('Consolas Bold');
+  font-family: 'ConsolasFallback';
+  font-display: swap;
+  size-adjust: 109%;
+}
+.body { fill: #24292f; }
+.key { fill: #953800; }
+.value { fill: #0a3069; }
+.muted { fill: #c2cfde; }
+text, tspan { white-space: pre; font-variant-ligatures: none; }
+</style>
+<rect width="1000" height="540" rx="15" fill="#f6f8fa"/>
+<text x="15" y="24" class="body">                   ,,...</text>
+<text x="15" y="42" class="body">              ,i;;issAAXsr;,</text>
+<text x="15" y="60" class="body">        .,:;ir235533335252AAAi,.</text>
+<text x="15" y="78" class="body">       rAXXsX533MMhMHMh352AAA252,</text>
+<text x="15" y="96" class="body">     ,A32225353GSHHGGGGHHHh555535;</text>
+<text x="15" y="114" class="body">    ,s5h33hHMA5GGGGSSSSSSSSHHMh225;</text>
+<text x="15" y="132" class="body">   .iAMhMMMh5HSSGGS#######SSSSGM352.</text>
+<text x="15" y="150" class="body">  .is3MhHHHhGSHh333hHHMhhMMGSGGSGM3s</text>
+<text x="15" y="168" class="body">   :XHGHHHHHHh5AXsrssssssXA23hhGGHMX</text>
+<text x="15" y="186" class="body">   i3HGGGGGHh52AAXXXXXXXXsXXA25MHGGA,</text>
+<text x="15" y="204" class="body">   ;hGHGGSHh352AAAXXXAAAXXsXXA223GS2</text>
+<text x="15" y="222" class="body">    XGGSSMh55AXssrrssXXsriiiirssAGX,</text>
+<text x="15" y="240" class="body">     ;HS3AAAXAAAAXssrrrssXAAXXsss2,</text>
+<text x="15" y="258" class="body">    :r2hAX553hMMMh32AXAA5MHHMhh3AAX</text>
+<text x="15" y="276" class="body">    rH35XA5525@@@555522hhhh@@@332si</text>
+<text x="15" y="294" class="body">     5M2XA2535###h332rXhh35###5Xri:</text>
+<text x="15" y="312" class="body">     :52XsXAA22222AAXiiAAAAAXXri;r.</text>
+<text x="15" y="330" class="body">      ,sAXXXXsssssXXXriXAsriiiiirs</text>
+<text x="15" y="348" class="body">        :sAAXXXXXA2Xsi;rsAXssrrss;</text>
+<text x="15" y="366" class="body">         rAAAA222A##Xsss##XAAAAXs,</text>
+<text x="15" y="384" class="body">         iX2A222XrX533332srssXA2:</text>
+<text x="15" y="402" class="body">          :A2AAA2A2253552222XX2r</text>
+<text x="15" y="420" class="body">           ,252A**#**#**#**sX5A</text>
+<text x="15" y="438" class="body">          ,iA22AXXsXA2222XsX5AAi,</text>
+<text x="15" y="456" class="body">        ,s33XAA2AXssssssrrsAXshh52Xi,</text>
+<text x="15" y="474" class="body">     ,iX55MH2XAA22AXXXAXXXXsr5GHHHh2Xi;:</text>
+<text x="15" y="492" class="body">  .;s552A5hHhAAAAA2533332Arr5GGGHh55352X</text>
+<text x="15" y="510" class="body">;A5255hMHSMHM22222222222Ass3SGGHMhhhh352</text>
+<text x="15" y="528" class="body">HM33H#9BBB#GM2552222222AXX3SSGGHMMh3h352</text>
+<text x="410" y="30" class="body">Hiro</text>
+<text x="449" y="30" class="muted">--------------------------------------------------------</text>
+<text x="410" y="70" class="body">01 / PROFILE</text>
+<text x="532" y="70" class="muted">---------------------------------------------</text>
+<text x="410" y="90" class="muted">.</text>
+<text x="429" y="90" class="key">Handle</text>
+<text x="486.8" y="90" class="body">:</text>
+<text x="500.8" y="90" class="muted">.............</text>
+<text x="640" y="90" class="value">Hiro</text>
+<text x="410" y="110" class="muted">.</text>
+<text x="429" y="110" class="key">Role</text>
+<text x="467.6" y="110" class="body">:</text>
+<text x="481.6" y="110" class="muted">...............</text>
+<text x="640" y="110" class="value">Full-Stack Engineer Intern</text>
+<text x="410" y="130" class="muted">.</text>
+<text x="429" y="130" class="key">Workplace</text>
+<text x="515.8" y="130" class="body">:</text>
+<text x="529.8" y="130" class="muted">..........</text>
+<text x="640" y="130" class="value">SaaS startup in Japan</text>
+<text x="410" y="210" class="body">02 / TOOLKIT</text>
+<text x="532" y="210" class="muted">---------------------------------------------</text>
+<text x="410" y="230" class="muted">.</text>
+<text x="429" y="230" class="key">Languages</text>
+<text x="515.8" y="230" class="body">:</text>
+<text x="529.8" y="230" class="muted">..........</text>
+<text x="640" y="230" class="value">TypeScript, JavaScript, PHP</text>
+<text x="410" y="250" class="muted">.</text>
+<text x="429" y="250" class="key">Frontend</text>
+<text x="506.1" y="250" class="body">:</text>
+<text x="520.1" y="250" class="muted">...........</text>
+<text x="640" y="250" class="value">Next.js, React, Tailwind CSS</text>
+<text x="410" y="270" class="muted">.</text>
+<text x="429" y="270" class="key">Backend</text>
+<text x="496.5" y="270" class="body">:</text>
+<text x="510.5" y="270" class="muted">............</text>
+<text x="640" y="270" class="value">Laravel</text>
+<text x="410" y="290" class="muted">.</text>
+<text x="429" y="290" class="key">Database</text>
+<text x="506.1" y="290" class="body">:</text>
+<text x="520.1" y="290" class="muted">...........</text>
+<text x="640" y="290" class="value">PostgreSQL</text>
+<text x="410" y="310" class="muted">.</text>
+<text x="429" y="310" class="key">DevOps</text>
+<text x="486.8" y="310" class="body">:</text>
+<text x="500.8" y="310" class="muted">.............</text>
+<text x="640" y="310" class="value">Git, GitHub Actions, Docker</text>
+<text x="410" y="390" class="body">03 / LEARNING + HOBBY</text>
+<text x="628" y="390" class="muted">-----------------------------------</text>
+<text x="410" y="410" class="muted">.</text>
+<text x="429" y="410" class="key">Languages</text>
+<text x="515.8" y="410" class="body">:</text>
+<text x="529.8" y="410" class="muted">..........</text>
+<text x="640" y="410" class="value">Python, Rust, Ruby, Java</text>
+<text x="410" y="470" class="body">04 / GITHUB</text>
+<text x="532" y="470" class="muted">---------------------------------------------</text>
+<text x="410" y="490" class="muted">.</text>
+<text x="429" y="490" class="key">Profile</text>
+<text x="496.5" y="490" class="body">:</text>
+<text x="510.5" y="490" class="muted">............</text>
+<text x="640" y="490" class="value">Hiro-Chiba</text>
+</svg>
