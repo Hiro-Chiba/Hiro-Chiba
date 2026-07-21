@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" font-family="ConsolasFallback,Consolas,Menlo,monospace" font-size="15px" role="img" aria-labelledby="title desc">
 <title id="title">Developer snapshot</title>
-<desc id="desc">An ASCII portrait beside location, environment, language, tooling, and current interests.</desc>
+<desc id="desc">An ASCII portrait beside education, future plans, location, environment, languages, tooling, and current interests.</desc>
 <style>
 @font-face {
   src: local('Consolas'), local('Consolas Bold');
@@ -86,10 +86,18 @@ text { white-space: pre; font-variant-ligatures: none; }
 <text x="204.0" y="1127.5">XssXAAAAXr;,. .   . .:i;rsAA2A22555552555535553533h33Ar;i;iiiissssXsXXAXAXAAAA5X</text>
 <text x="204.0" y="1144.0">sssXsXsi:,   .       ,:;isX2A2A225555525252555535353Ar;i;i;iirrsrssXsXXXXAXAA2AA</text>
 </g>
-<text x="500" y="28" class="body">hiro@japan:~$ ./now</text>
-<text x="690" y="28" class="muted">----------------------------------------</text>
-<text x="500" y="66" class="body">01 / BASE</text>
-<text x="590" y="66" class="muted">-----------------------------------------------------</text>
+<text x="500" y="28" class="body">01 / BASE</text>
+<text x="590" y="28" class="muted">-----------------------------------------------------</text>
+<text x="500" y="47" class="muted">.</text>
+<text x="519" y="47" class="key">Status</text>
+<text x="573.2" y="47" class="body">:</text>
+<text x="586.3" y="47" class="muted">..............</text>
+<text x="720" y="47" class="value">Undergraduate student</text>
+<text x="500" y="66" class="muted">.</text>
+<text x="519" y="66" class="key">Next</text>
+<text x="555.2" y="66" class="body">:</text>
+<text x="568.3" y="66" class="muted">................</text>
+<text x="720" y="66" class="value">Graduate studies</text>
 <text x="500" y="85" class="muted">.</text>
 <text x="519" y="85" class="key">Location</text>
 <text x="591.3" y="85" class="body">:</text>
