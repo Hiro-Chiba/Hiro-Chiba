@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" font-family="ConsolasFallback,Consolas,Menlo,monospace" font-size="15px" role="img" aria-labelledby="title desc">
 <title id="title">Developer snapshot</title>
-<desc id="desc">An ASCII portrait beside education, future plans, location, environment, languages, tooling, and current interests.</desc>
+<desc id="desc">An ASCII portrait beside education, future plans, location, environment, languages, tooling, research, and interests.</desc>
 <style>
 @font-face {
   src: local('Consolas'), local('Consolas Bold');
@@ -167,23 +167,33 @@ text { white-space: pre; font-variant-ligatures: none; }
 <text x="591.3" y="427" class="body">:</text>
 <text x="604.4" y="427" class="muted">............</text>
 <text x="720" y="427" class="value">Python, Rust, Ruby, Java</text>
-<text x="500" y="484" class="body">04 / TOOLING</text>
-<text x="620" y="484" class="muted">--------------------------------------------------</text>
-<text x="500" y="503" class="muted">.</text>
-<text x="519" y="503" class="key">Workflow</text>
-<text x="591.3" y="503" class="body">:</text>
-<text x="604.4" y="503" class="muted">............</text>
-<text x="720" y="503" class="value">Git, GitHub Actions, Docker</text>
-<text x="500" y="560" class="body">05 / CURRENT</text>
-<text x="620" y="560" class="muted">--------------------------------------------------</text>
+<text x="500" y="465" class="body">04 / TOOLING</text>
+<text x="620" y="465" class="muted">--------------------------------------------------</text>
+<text x="500" y="484" class="muted">.</text>
+<text x="519" y="484" class="key">Workflow</text>
+<text x="591.3" y="484" class="body">:</text>
+<text x="604.4" y="484" class="muted">............</text>
+<text x="720" y="484" class="value">Git, GitHub Actions, Docker</text>
+<text x="500" y="522" class="body">05 / CURRENT</text>
+<text x="620" y="522" class="muted">--------------------------------------------------</text>
+<text x="500" y="541" class="muted">.</text>
+<text x="519" y="541" class="key">Building</text>
+<text x="591.3" y="541" class="body">:</text>
+<text x="604.4" y="541" class="muted">............</text>
+<text x="720" y="541" class="value">SaaS products &amp; developer tools</text>
+<text x="500" y="560" class="muted">.</text>
+<text x="519" y="560" class="key">Exploring</text>
+<text x="600.4" y="560" class="body">:</text>
+<text x="613.5" y="560" class="muted">...........</text>
+<text x="720" y="560" class="value">CLI, TUI &amp; workflow automation</text>
 <text x="500" y="579" class="muted">.</text>
-<text x="519" y="579" class="key">Building</text>
+<text x="519" y="579" class="key">Research</text>
 <text x="591.3" y="579" class="body">:</text>
 <text x="604.4" y="579" class="muted">............</text>
-<text x="720" y="579" class="value">SaaS products &amp; developer tools</text>
+<text x="720" y="579" class="value">Image sensor chip development</text>
 <text x="500" y="598" class="muted">.</text>
-<text x="519" y="598" class="key">Exploring</text>
-<text x="600.4" y="598" class="body">:</text>
-<text x="613.5" y="598" class="muted">...........</text>
-<text x="720" y="598" class="value">CLI, TUI &amp; workflow automation</text>
+<text x="519" y="598" class="key">Offline</text>
+<text x="582.3" y="598" class="body">:</text>
+<text x="595.4" y="598" class="muted">.............</text>
+<text x="720" y="598" class="value">Discovering &amp; playing games on Steam</text>
 </svg>
