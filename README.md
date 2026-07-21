@@ -1,6 +1,6 @@
-<a href="https://github.com/Hiro-Chiba">
-  <img alt="Hiro's GitHub profile" src="./assets/profile.svg">
-</a>
+<p align="center">
+  <img alt="ASCII portrait with a snapshot of where and how I build" src="./assets/profile.svg">
+</p>
 
 ## Tech Stack
 

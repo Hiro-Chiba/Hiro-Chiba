@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" font-family="ConsolasFallback,Consolas,Menlo,monospace" font-size="15px" role="img" aria-labelledby="title desc">
-<title id="title">Hiro profile card</title>
-<desc id="desc">An ASCII portrait of Hiro beside profile, environment, language, and tooling information.</desc>
+<title id="title">Developer snapshot</title>
+<desc id="desc">An ASCII portrait beside location, environment, language, tooling, and current interests.</desc>
 <style>
 @font-face {
   src: local('Consolas'), local('Consolas Bold');
@@ -86,25 +86,30 @@ text { white-space: pre; font-variant-ligatures: none; }
 <text x="204.0" y="1127.5">XssXAAAAXr;,. .   . .:i;rsAA2A22555552555535553533h33Ar;i;iiiissssXsXXAXAXAAAA5X</text>
 <text x="204.0" y="1144.0">sssXsXsi:,   .       ,:;isX2A2A225555525252555535353Ar;i;i;iirrsrssXsXXXXAXAA2AA</text>
 </g>
-<text x="500" y="28" class="body">Hiro</text>
-<text x="545" y="28" class="muted">-----------------------------------------------------------</text>
-<text x="500" y="66" class="body">01 / PROFILE</text>
-<text x="620" y="66" class="muted">--------------------------------------------------</text>
+<text x="500" y="28" class="body">hiro@japan:~$ ./now</text>
+<text x="690" y="28" class="muted">----------------------------------------</text>
+<text x="500" y="66" class="body">01 / BASE</text>
+<text x="590" y="66" class="muted">-----------------------------------------------------</text>
 <text x="500" y="85" class="muted">.</text>
-<text x="519" y="85" class="key">Handle</text>
-<text x="573.2" y="85" class="body">:</text>
-<text x="586.3" y="85" class="muted">..............</text>
-<text x="720" y="85" class="value">Hiro</text>
+<text x="519" y="85" class="key">Location</text>
+<text x="591.3" y="85" class="body">:</text>
+<text x="604.4" y="85" class="muted">............</text>
+<text x="720" y="85" class="value">Japan</text>
 <text x="500" y="104" class="muted">.</text>
-<text x="519" y="104" class="key">Role</text>
-<text x="555.2" y="104" class="body">:</text>
-<text x="568.3" y="104" class="muted">................</text>
-<text x="720" y="104" class="value">Full-Stack Engineer Intern</text>
+<text x="519" y="104" class="key">Timezone</text>
+<text x="591.3" y="104" class="body">:</text>
+<text x="604.4" y="104" class="muted">............</text>
+<text x="720" y="104" class="value">JST / UTC+9</text>
 <text x="500" y="123" class="muted">.</text>
-<text x="519" y="123" class="key">Workplace</text>
-<text x="600.4" y="123" class="body">:</text>
-<text x="613.5" y="123" class="muted">...........</text>
-<text x="720" y="123" class="value">SaaS startup in Japan</text>
+<text x="519" y="123" class="key">Role</text>
+<text x="555.2" y="123" class="body">:</text>
+<text x="568.3" y="123" class="muted">................</text>
+<text x="720" y="123" class="value">Full-Stack Engineer Intern</text>
+<text x="500" y="142" class="muted">.</text>
+<text x="519" y="142" class="key">Workplace</text>
+<text x="600.4" y="142" class="body">:</text>
+<text x="613.5" y="142" class="muted">...........</text>
+<text x="720" y="142" class="value">SaaS startup in Japan</text>
 <text x="500" y="180" class="body">02 / ENVIRONMENT</text>
 <text x="654" y="180" class="muted">----------------------------------------------</text>
 <text x="500" y="199" class="muted">.</text>
@@ -127,11 +132,6 @@ text { white-space: pre; font-variant-ligatures: none; }
 <text x="582.3" y="256" class="body">:</text>
 <text x="595.4" y="256" class="muted">.............</text>
 <text x="720" y="256" class="value">Node.js</text>
-<text x="500" y="275" class="muted">.</text>
-<text x="519" y="275" class="key">Timezone</text>
-<text x="591.3" y="275" class="body">:</text>
-<text x="604.4" y="275" class="muted">............</text>
-<text x="720" y="275" class="value">JST / UTC+9</text>
 <text x="500" y="332" class="body">03 / LANGUAGES</text>
 <text x="636" y="332" class="muted">------------------------------------------------</text>
 <text x="500" y="351" class="muted">.</text>
@@ -166,11 +166,16 @@ text { white-space: pre; font-variant-ligatures: none; }
 <text x="591.3" y="503" class="body">:</text>
 <text x="604.4" y="503" class="muted">............</text>
 <text x="720" y="503" class="value">Git, GitHub Actions, Docker</text>
-<text x="500" y="560" class="body">05 / GITHUB</text>
+<text x="500" y="560" class="body">05 / CURRENT</text>
 <text x="620" y="560" class="muted">--------------------------------------------------</text>
 <text x="500" y="579" class="muted">.</text>
-<text x="519" y="579" class="key">Profile</text>
-<text x="582.3" y="579" class="body">:</text>
-<text x="595.4" y="579" class="muted">.............</text>
-<text x="720" y="579" class="value">Hiro-Chiba</text>
+<text x="519" y="579" class="key">Building</text>
+<text x="591.3" y="579" class="body">:</text>
+<text x="604.4" y="579" class="muted">............</text>
+<text x="720" y="579" class="value">SaaS products &amp; developer tools</text>
+<text x="500" y="598" class="muted">.</text>
+<text x="519" y="598" class="key">Exploring</text>
+<text x="600.4" y="598" class="body">:</text>
+<text x="613.5" y="598" class="muted">...........</text>
+<text x="720" y="598" class="value">CLI, TUI &amp; workflow automation</text>
 </svg>
