@@ -12,14 +12,12 @@ from xml.sax.saxutils import escape
 from profile_art_config import load_config, project_path
 
 SIMPLE_ICONS_VERSION = "16.28.0"
+AWS_SIMPLE_ICONS_VERSION = "14.15.0"
 LOOP_DURATION = 16.0
 LINE_SPEED = 88.0
 FADE_START = 0.88
 ICON_FETCH_ATTEMPTS = 3
-ICON_URL = (
-    "https://cdn.jsdelivr.net/npm/simple-icons@"
-    f"{SIMPLE_ICONS_VERSION}/icons/{{slug}}.svg"
-)
+ICON_URL = "https://cdn.jsdelivr.net/npm/simple-icons@{version}/icons/{slug}.svg"
 
 
 @dataclass(frozen=True)
@@ -31,6 +29,7 @@ class Tech:
     x: int
     y: int
     width: int
+    icon_version: str = SIMPLE_ICONS_VERSION
 
 
 @dataclass(frozen=True)
@@ -53,6 +52,16 @@ TECHS = (
     Tech("Git", "git", "#F05032", "#FFFFFF", 310, 372, 76),
     Tech("GitHub Actions", "githubactions", "#2088FF", "#FFFFFF", 435, 372, 144),
     Tech("Docker", "docker", "#2496ED", "#FFFFFF", 575, 372, 100),
+    Tech(
+        "AWS",
+        "amazonwebservices",
+        "#FF9900",
+        "#232F3E",
+        740,
+        372,
+        100,
+        icon_version=AWS_SIMPLE_ICONS_VERSION,
+    ),
     Tech("Python", "python", "#3776AB", "#FFFFFF", 116, 330, 100),
     Tech("Rust", "rust", "#000000", "#FFFFFF", 116, 370, 100),
 )
@@ -77,6 +86,11 @@ BRANCHES = (
         0.85,
     ),
     Branch("docker", ((468, 268), (468, 294), (575, 294), (575, 356)), 1.45),
+    Branch(
+        "amazonwebservices",
+        ((500, 258), (608, 258), (608, 320), (656, 320), (656, 372), (690, 372)),
+        1.65,
+    ),
     Branch("python", ((360, 246), (244, 246), (244, 330), (166, 330)), 0.55),
     Branch("rust", ((360, 258), (228, 258), (228, 370), (166, 370)), 1.35),
 )
@@ -88,13 +102,14 @@ CATEGORIES = (
     ("[ BACKEND ]", 680, 76, "start", ("laravel",)),
     ("[ DATABASE ]", 674, 198, "start", ("postgresql", "mysql")),
     ("[ DEVOPS ]", 430, 330, "middle", ("git", "githubactions", "docker")),
+    ("[ CLOUD ]", 740, 330, "middle", ("amazonwebservices",)),
     ("[ LEARNING / HOBBY ]", 56, 298, "start", ("python", "rust")),
 )
 
 
-def fetch_icon_path(slug: str) -> str:
+def fetch_icon_path(tech: Tech) -> str:
     request = urllib.request.Request(
-        ICON_URL.format(slug=slug),
+        ICON_URL.format(version=tech.icon_version, slug=tech.slug),
         headers={"User-Agent": "Hiro-Chiba profile SVG generator"},
     )
     for attempt in range(ICON_FETCH_ATTEMPTS):
@@ -108,7 +123,7 @@ def fetch_icon_path(slug: str) -> str:
             time.sleep(0.5 * 2**attempt)
     match = re.search(r'<path d="([^"]+)"', svg)
     if not match:
-        raise ValueError(f"Simple Icons path not found for {slug}")
+        raise ValueError(f"Simple Icons path not found for {tech.slug}")
     return match.group(1)
 
 
@@ -174,7 +189,7 @@ def tech_node(tech: Tech, reveal: float) -> str:
 
 def main() -> None:
     config = load_config(required={"tech_stack_output", "terminal_user"})
-    paths = {tech.slug: fetch_icon_path(tech.slug) for tech in TECHS}
+    paths = {tech.slug: fetch_icon_path(tech) for tech in TECHS}
     reveal_by_slug = {branch.slug: branch_reveal(branch) for branch in BRANCHES}
     symbols = icon_symbols(paths)
     nodes = "".join(tech_node(tech, reveal_by_slug[tech.slug]) for tech in TECHS)
@@ -202,7 +217,7 @@ def main() -> None:
   role="img" aria-labelledby="title description"
   font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
   <title id="title">Hiro's animated branded technology network</title>
-  <desc id="description">Circuit branches grow from TECH to fourteen technology badges.</desc>
+  <desc id="description">Circuit branches grow from TECH to fifteen technology badges.</desc>
   <defs>
     <linearGradient id="panel-bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#111722"/>
