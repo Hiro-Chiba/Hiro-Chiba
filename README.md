@@ -1,6 +1,25 @@
-<p align="center">
-  <img alt="ASCII portrait with a snapshot of where and how I build" src="./assets/profile.svg">
-</p>
+<div align="center">
+
+<h3><code>hiro@github ~ $ whoami</code></h3>
+
+<table>
+<tr>
+<td valign="top"><img src="./assets/hiro-ascii.svg" width="370" alt="Hiro Chiba in ASCII" /></td>
+<td valign="top"><img src="./assets/wordmark.svg" width="490" alt="HIRO in animated 3D ASCII" /></td>
+</tr>
+</table>
+
+<br>
+<br>
+
+<h3><code>hiro@github ~ $ ./contributions.sh</code></h3>
+
+<img src="./assets/contrib-heatmap.svg" width="860" alt="Hiro's animated GitHub contribution graph" />
+
+<br>
+<br>
+
+</div>
 
 ## Tech Stack
 
@@ -26,9 +45,3 @@
   ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
   ![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)
   ![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white)
-
-## Contribution Graph
-
-<p align="center">
-  <img alt="Pac-Man eating my contribution graph" src="https://raw.githubusercontent.com/Hiro-Chiba/Hiro-Chiba/output/pacman-contribution-graph.svg">
-</p>
