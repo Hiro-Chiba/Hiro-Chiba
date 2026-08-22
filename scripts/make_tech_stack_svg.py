@@ -12,7 +12,7 @@ from xml.sax.saxutils import escape
 from profile_art_config import load_config, project_path
 
 SIMPLE_ICONS_VERSION = "16.28.0"
-LOOP_DURATION = 12.0
+LOOP_DURATION = 14.0
 LINE_SPEED = 88.0
 FADE_START = 0.88
 ICON_FETCH_ATTEMPTS = 3
@@ -71,8 +71,12 @@ BRANCHES = (
     Branch("postgresql", ((500, 234), (640, 234), (640, 238), (674, 238)), 0.65),
     Branch("mysql", ((500, 246), (624, 246), (624, 280), (680, 280)), 1.05),
     Branch("git", ((392, 268), (392, 306), (310, 306), (310, 356)), 1.25),
-    Branch("githubactions", ((430, 268), (430, 306), (435, 306), (435, 356)), 0.85),
-    Branch("docker", ((468, 268), (468, 306), (575, 306), (575, 356)), 1.45),
+    Branch(
+        "githubactions",
+        ((430, 268), (430, 306), (515, 306), (515, 372), (507, 372)),
+        0.85,
+    ),
+    Branch("docker", ((468, 268), (468, 294), (575, 294), (575, 356)), 1.45),
     Branch("python", ((360, 246), (244, 246), (244, 330), (166, 330)), 0.55),
     Branch("rust", ((360, 258), (228, 258), (228, 370), (166, 370)), 1.35),
 )
