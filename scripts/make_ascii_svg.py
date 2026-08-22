@@ -6,7 +6,7 @@ import html
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-from profile_art_config import DEFAULT_CONFIG, load_config, project_path
+from profile_art_config import DEFAULT_CONFIG, RevealLoop, load_config, project_path
 
 CANVAS_W = 840
 CANVAS_H = 875
@@ -14,8 +14,6 @@ TITLEBAR_H = 30
 PAD = 20
 ART_TOP = TITLEBAR_H + PAD * 0.35
 ART_W = CANVAS_W - PAD * 2
-ROW_DUR = 0.09
-STAGGER = 0.09
 
 BG = "#0d1117"
 BG2 = "#111722"
@@ -47,6 +45,8 @@ def render(
     source_font_size: float,
     terminal_user: str,
     display_name: str,
+    loop: RevealLoop,
+    line_duration: float,
     static: bool,
 ):
     scale = ART_W / source_width
@@ -61,6 +61,17 @@ def render(
             '<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">'
             f'<stop offset="0" stop-color="{BG2}"/><stop offset="1" stop-color="{BG}"/>'
             "</linearGradient></defs>"
+        ),
+        (
+            ""
+            if static
+            else """<style>
+            .portrait-static { display: none; }
+            @media (prefers-reduced-motion: reduce) {
+              .portrait-motion { display: none; }
+              .portrait-static { display: inline; }
+            }
+            </style>"""
         ),
         f'<rect width="{CANVAS_W}" height="{CANVAS_H}" rx="12" fill="url(#bg)"/>',
         (
@@ -80,11 +91,13 @@ def render(
         f'font-size="12" text-anchor="middle">{html.escape(terminal_user)}@github: ~$ ./portrait.sh</text>'
     )
 
+    static_rows = []
+    motion_rows = []
     for index, (source_x, source_y, line) in enumerate(rows):
         x = PAD + source_x * scale
         y = ART_TOP + source_y * scale
         row_y = y - row_height * 0.82
-        delay = index * STAGGER
+        delay = index * line_duration
         safe = html.escape(line)
         text = (
             f'<text xml:space="preserve" x="{x:.1f}" y="{y:.1f}" fill="{INK}" '
@@ -93,19 +106,36 @@ def render(
         if static:
             parts.append(text)
             continue
+        static_rows.append(text)
+        reveal_end, fade_start, fade_end = loop.opacity_key_times(delay, line_duration)
         parts.append(
             f'<clipPath id="r{index}"><rect x="{PAD}" y="{row_y:.1f}" height="{row_height:.1f}" width="0">'
-            f'<animate attributeName="width" from="0" to="{ART_W}" begin="{delay:.3f}s" '
-            f'dur="{ROW_DUR:.2f}s" fill="freeze"/></rect></clipPath>'
+            f'<animate attributeName="width" values="0;{ART_W};{ART_W}" '
+            f'keyTimes="0;{reveal_end:.5f};1" begin="{delay:.3f}s" '
+            f'dur="{loop.duration:.2f}s" repeatCount="indefinite"/></rect></clipPath>'
         )
-        parts.append(f'<g clip-path="url(#r{index})">{text}</g>')
-        parts.append(
+        opacity = (
+            f'<animate attributeName="opacity" values="0;1;1;0;0" '
+            f'keyTimes="0;{reveal_end:.5f};{fade_start:.5f};{fade_end:.5f};1" '
+            f'begin="{delay:.3f}s" dur="{loop.duration:.2f}s" repeatCount="indefinite"/>'
+        )
+        cursor = (
             f'<rect y="{row_y + 1:.1f}" width="6" height="{row_height - 2:.1f}" fill="{INK}" opacity="0">'
-            f'<animate attributeName="x" from="{PAD}" to="{PAD + ART_W}" begin="{delay:.3f}s" '
-            f'dur="{ROW_DUR:.2f}s" fill="freeze"/>'
-            f'<set attributeName="opacity" to="0.85" begin="{delay:.3f}s"/>'
-            f'<set attributeName="opacity" to="0" begin="{delay + ROW_DUR:.3f}s"/></rect>'
+            f'<animate attributeName="x" values="{PAD};{PAD + ART_W};{PAD + ART_W}" '
+            f'keyTimes="0;{reveal_end:.5f};1" begin="{delay:.3f}s" '
+            f'dur="{loop.duration:.2f}s" repeatCount="indefinite"/>'
+            f'<animate attributeName="opacity" values=".85;.85;0;0" '
+            f'keyTimes="0;{reveal_end:.5f};{min(reveal_end + 0.0001, 0.9999):.5f};1" '
+            f'begin="{delay:.3f}s" dur="{loop.duration:.2f}s" repeatCount="indefinite"/></rect>'
         )
+        motion_rows.append(
+            f'<g class="portrait-motion" opacity="0">{opacity}'
+            f'<g clip-path="url(#r{index})">{text}</g>{cursor}</g>'
+        )
+
+    if not static:
+        parts.append(f'<g class="portrait-static">{"".join(static_rows)}</g>')
+        parts.extend(motion_rows)
 
     status_line_y = CANVAS_H - 43
     status_y = CANVAS_H - 17
@@ -142,17 +172,21 @@ def main() -> None:
             "display_name",
             "portrait_source",
             "portrait_output",
+            "portrait_animation",
         },
     )
     source = options.source or project_path(config["portrait_source"])
     output = options.out or project_path(config["portrait_output"])
     source_width, source_font_size, rows = read_rows(source)
+    loop = RevealLoop.from_config(config["portrait_animation"])
     svg = render(
         rows,
         source_width,
         source_font_size,
         config["terminal_user"],
         config["display_name"],
+        loop,
+        float(config["portrait_animation"]["line_seconds"]),
         options.static,
     )
     output.parent.mkdir(parents=True, exist_ok=True)

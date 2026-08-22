@@ -10,9 +10,10 @@ import json
 import time
 import urllib.error
 import urllib.request
+from dataclasses import dataclass
 from pathlib import Path
 
-from profile_art_config import DEFAULT_CONFIG, load_config, project_path
+from profile_art_config import DEFAULT_CONFIG, RevealLoop, load_config, project_path
 
 PALETTE = ("#161b22", "#0e4429", "#006d32", "#26a641", "#39d353")
 MONTHS = (
@@ -33,6 +34,23 @@ CELL = 13
 GAP = 3
 LEFT = 34
 TOP = 24
+
+
+@dataclass(frozen=True)
+class AnimationTiming:
+    loop: RevealLoop
+    sweep: float
+    cell: float
+
+    @classmethod
+    def from_config(cls, values: dict) -> AnimationTiming:
+        timing = cls(
+            loop=RevealLoop.from_config(values),
+            sweep=float(values["sweep_seconds"]),
+            cell=float(values["cell_seconds"]),
+        )
+        timing.loop.opacity_key_times(timing.sweep, timing.cell)
+        return timing
 
 
 def fetch_calendar(user: str, attempts: int) -> list[dict]:
@@ -81,7 +99,9 @@ def calendar_cells(contributions: list[dict]):
     return cells, month_labels, max(cell[0] for cell in cells) + 1
 
 
-def render(contributions: list[dict], static: bool = False) -> str:
+def render(
+    contributions: list[dict], timing: AnimationTiming, static: bool = False
+) -> str:
     cells, month_labels, weeks = calendar_cells(contributions)
     step = CELL + GAP
     width = LEFT + weeks * step + 6
@@ -89,26 +109,17 @@ def render(contributions: list[dict], static: bool = False) -> str:
     total = sum(int(item.get("count", 0)) for item in contributions)
     max_order = max((weeks - 1) + 6 * 0.6, 1)
 
-    if static:
-        animation_css = ".cell { opacity: 1; }"
-    else:
-        animation_css = """
-        .cell { transform-box: fill-box; transform-origin: center; opacity: 0;
-                animation: reveal .55s ease-out both; }
-        .active { animation: reveal .55s ease-out both, brighten .70s ease-out both; }
-        @keyframes reveal {
-          0% { opacity: 0; transform: scale(.2); }
-          60% { opacity: 1; transform: scale(1.1); }
-          100% { opacity: 1; transform: scale(1); }
-        }
-        @keyframes brighten {
-          0%, 45% { filter: brightness(2.4); }
-          100% { filter: brightness(1); }
-        }
+    animation_css = (
+        ".cell { opacity: 1; }"
+        if static
+        else """
+        .cell-static { display: none; }
         @media (prefers-reduced-motion: reduce) {
-          .cell { opacity: 1 !important; animation: none !important; }
+          .cell-motion { display: none; }
+          .cell-static { display: inline; }
         }
         """
+    )
 
     parts = [
         (
@@ -139,12 +150,48 @@ def render(contributions: list[dict], static: bool = False) -> str:
     for week, weekday, date, count, level in cells:
         x = LEFT + week * step
         y = TOP + weekday * step
-        delay = ((week + weekday * 0.6) / max_order) * 3.6
-        active = " active" if count else ""
+        color = PALETTE[level]
+        tooltip = f"<title>{html.escape(date)}: {count} contributions</title>"
+        if static:
+            parts.append(
+                f'<rect class="cell" x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2.5" '
+                f'fill="{color}">{tooltip}</rect>'
+            )
+            continue
+
         parts.append(
-            f'<rect class="cell{active}" x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2.5" '
-            f'fill="{PALETTE[level]}" style="animation-delay:{delay:.3f}s">'
-            f"<title>{html.escape(date)}: {count} contributions</title></rect>"
+            f'<rect class="cell-static" x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2.5" '
+            f'fill="{color}">{tooltip}</rect>'
+        )
+        delay = ((week + weekday * 0.6) / max_order) * timing.sweep
+        reveal_end, fade_start, fade_end = timing.loop.opacity_key_times(
+            delay, timing.cell
+        )
+        opacity = (
+            f'<animate attributeName="opacity" values="0;1;1;0;0" '
+            f'keyTimes="0;{reveal_end:.5f};{fade_start:.5f};{fade_end:.5f};1" '
+            f'begin="{delay:.3f}s" dur="{timing.loop.duration:.2f}s" repeatCount="indefinite"/>'
+        )
+        scale = (
+            f'<animateTransform attributeName="transform" type="scale" values=".2;1.1;1;1" '
+            f'keyTimes="0;{reveal_end * 0.6:.5f};{reveal_end:.5f};1" '
+            f'begin="{delay:.3f}s" dur="{timing.loop.duration:.2f}s" repeatCount="indefinite"/>'
+        )
+        flash = ""
+        if count:
+            flash = (
+                f'<animate attributeName="fill" values="#b4ffaa;#b4ffaa;{color};{color}" '
+                f'keyTimes="0;{reveal_end * 0.45:.5f};{reveal_end:.5f};1" '
+                f'begin="{delay:.3f}s" dur="{timing.loop.duration:.2f}s" repeatCount="indefinite"/>'
+            )
+        center_x = x + CELL / 2
+        center_y = y + CELL / 2
+        parts.append(
+            f'<g class="cell-motion" transform="translate({center_x:.1f} {center_y:.1f})">'
+            f'<g opacity="0">{opacity}{scale}'
+            f'<rect class="cell" x="{-CELL / 2:.1f}" y="{-CELL / 2:.1f}" '
+            f'width="{CELL}" height="{CELL}" rx="2.5" fill="{color}">{tooltip}{flash}</rect>'
+            "</g></g>"
         )
 
     parts.append(
@@ -168,12 +215,14 @@ def main() -> None:
             "github_user",
             "contributions_output",
             "contribution_fetch_attempts",
+            "contribution_animation",
         },
     )
     user = options.user or config["github_user"]
     output = options.out or project_path(config["contributions_output"])
     contributions = fetch_calendar(user, int(config["contribution_fetch_attempts"]))
-    svg = render(contributions, static=options.static)
+    timing = AnimationTiming.from_config(config["contribution_animation"])
+    svg = render(contributions, timing, static=options.static)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(svg, encoding="utf-8")
     print(f"wrote {output} ({len(contributions)} days)")

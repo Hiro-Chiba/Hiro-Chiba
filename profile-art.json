@@ -10,5 +10,18 @@
   "wordmark_font_pattern": "Futura:style=Bold",
   "wordmark_columns": 60,
   "wordmark_row_margin": 8,
-  "contribution_fetch_attempts": 3
+  "contribution_fetch_attempts": 3,
+  "portrait_animation": {
+    "duration_seconds": 18.0,
+    "fade_start_seconds": 15.8,
+    "fade_seconds": 0.6,
+    "line_seconds": 0.09
+  },
+  "contribution_animation": {
+    "duration_seconds": 15.0,
+    "fade_start_seconds": 12.8,
+    "fade_seconds": 0.6,
+    "sweep_seconds": 3.6,
+    "cell_seconds": 0.55
+  }
 }
