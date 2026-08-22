@@ -12,7 +12,7 @@ from xml.sax.saxutils import escape
 from profile_art_config import load_config, project_path
 
 SIMPLE_ICONS_VERSION = "16.28.0"
-LOOP_DURATION = 14.0
+LOOP_DURATION = 16.0
 LINE_SPEED = 88.0
 FADE_START = 0.88
 ICON_FETCH_ATTEMPTS = 3
@@ -238,8 +238,8 @@ def main() -> None:
 {nodes}
 
   <rect x="355" y="185" width="150" height="88" rx="13" fill="none" stroke="#C9D1D9" stroke-width="8" opacity=".14" filter="url(#soft-glow)"/>
+  <rect x="360" y="190" width="140" height="78" rx="10" fill="#0D1117" stroke="#C9D1D9" stroke-width="1.5"/>
   <g>
-    <rect x="360" y="190" width="140" height="78" rx="10" fill="#0D1117" stroke="#C9D1D9" stroke-width="1.5"/>
     <text x="430" y="226" fill="#C9D1D9" font-size="25" font-weight="700" text-anchor="middle" letter-spacing="4">TECH</text>
     <line x1="391" y1="237" x2="469" y2="237" stroke="#30363D"/>
     <text x="430" y="253" fill="#7D8590" font-size="10" text-anchor="middle" letter-spacing="3">STACK</text>
