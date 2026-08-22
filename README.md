@@ -19,7 +19,16 @@
 <br>
 <br>
 
+<h3><code>hiro@github ~ $ ./stack-map.sh</code></h3>
+
+<img src="./assets/tech-stack.svg" width="860" alt="Hiro's animated technology stack" />
+
+<br>
+<br>
+
 </div>
+
+<!-- Legacy Tech Stack design. Kept for possible restoration.
 
 ## Tech Stack
 
@@ -36,6 +45,7 @@
     ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)
   - **Database:**<br>
     ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
+    ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
   - **DevOps:**<br>
     ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
     ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
@@ -44,4 +54,5 @@
 - **Learning / Hobby:**<br>
   ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
   ![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)
-  ![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white)
+
+-->

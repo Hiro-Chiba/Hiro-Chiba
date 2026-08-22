@@ -7,6 +7,7 @@
   "portrait_output": "assets/hiro-ascii.svg",
   "wordmark_output": "assets/wordmark.svg",
   "contributions_output": "assets/contrib-heatmap.svg",
+  "tech_stack_output": "assets/tech-stack.svg",
   "wordmark_font_pattern": "Futura:style=Bold",
   "wordmark_columns": 60,
   "wordmark_row_margin": 8,
