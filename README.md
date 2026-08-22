@@ -2,6 +2,8 @@
 
 <h3><code>hiro@github ~ $ whoami</code></h3>
 
+<p><code>Full-Stack Engineer Intern | SaaS Startup in Japan</code></p>
+
 <table>
 <tr>
 <td valign="top"><img src="./assets/hiro-ascii.svg" width="370" alt="Hiro Chiba in ASCII" /></td>
