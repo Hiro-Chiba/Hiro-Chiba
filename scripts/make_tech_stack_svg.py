@@ -13,7 +13,7 @@ from profile_art_config import load_config, project_path
 
 SIMPLE_ICONS_VERSION = "16.28.0"
 AWS_SIMPLE_ICONS_VERSION = "14.15.0"
-LOOP_DURATION = 16.0
+LOOP_DURATION = 18.0
 LINE_SPEED = 88.0
 FADE_START = 0.88
 ICON_FETCH_ATTEMPTS = 3

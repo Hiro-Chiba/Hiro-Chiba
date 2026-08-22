@@ -44,158 +44,158 @@
   <g>
     <path class="wire" d="M360 210H244V103H186" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0">
       <animate attributeName="stroke-dashoffset" values="1;1;0;0"
-        keyTimes="0;0.02187;0.22145;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.01944;0.19684;1"
+        dur="18s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        dur="18s" repeatCount="indefinite"/>
     </path>
     <path class="wire" d="M360 222H276V145H186" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0">
       <animate attributeName="stroke-dashoffset" values="1;1;0;0"
-        keyTimes="0;0.04688;0.22514;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.04167;0.20013;1"
+        dur="18s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        dur="18s" repeatCount="indefinite"/>
     </path>
     <path class="wire" d="M360 234H260V187H164" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0">
       <animate attributeName="stroke-dashoffset" values="1;1;0;0"
-        keyTimes="0;0.07187;0.24446;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.06389;0.21730;1"
+        dur="18s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        dur="18s" repeatCount="indefinite"/>
     </path>
     <path class="wire" d="M392 190V150H315V120" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0">
       <animate attributeName="stroke-dashoffset" values="1;1;0;0"
-        keyTimes="0;0.01562;0.12003;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.01389;0.10669;1"
+        dur="18s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        dur="18s" repeatCount="indefinite"/>
     </path>
     <path class="wire" d="M430 190V120" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0">
       <animate attributeName="stroke-dashoffset" values="1;1;0;0"
-        keyTimes="0;0.05937;0.10909;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.05278;0.09697;1"
+        dur="18s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        dur="18s" repeatCount="indefinite"/>
     </path>
     <path class="wire" d="M468 190V150H555V120" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0">
       <animate attributeName="stroke-dashoffset" values="1;1;0;0"
-        keyTimes="0;0.00937;0.12088;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.00833;0.10745;1"
+        dur="18s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        dur="18s" repeatCount="indefinite"/>
     </path>
     <path class="wire" d="M500 210H648V135H680V115" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0">
       <animate attributeName="stroke-dashoffset" values="1;1;0;0"
-        keyTimes="0;0.02813;0.22344;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.02500;0.19861;1"
+        dur="18s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        dur="18s" repeatCount="indefinite"/>
     </path>
     <path class="wire" d="M500 234H640V238H674" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0">
       <animate attributeName="stroke-dashoffset" values="1;1;0;0"
-        keyTimes="0;0.04063;0.16705;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.03611;0.14848;1"
+        dur="18s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        dur="18s" repeatCount="indefinite"/>
     </path>
     <path class="wire" d="M500 246H624V280H680" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0">
       <animate attributeName="stroke-dashoffset" values="1;1;0;0"
-        keyTimes="0;0.06563;0.21761;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.05833;0.19343;1"
+        dur="18s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        dur="18s" repeatCount="indefinite"/>
     </path>
     <path class="wire" d="M392 268V306H310V356" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0">
       <animate attributeName="stroke-dashoffset" values="1;1;0;0"
-        keyTimes="0;0.07812;0.19886;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.06944;0.17677;1"
+        dur="18s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        dur="18s" repeatCount="indefinite"/>
     </path>
     <path class="wire" d="M430 268V306H515V372H507" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0">
       <animate attributeName="stroke-dashoffset" values="1;1;0;0"
-        keyTimes="0;0.05312;0.19304;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.04722;0.17159;1"
+        dur="18s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        dur="18s" repeatCount="indefinite"/>
     </path>
     <path class="wire" d="M468 268V294H575V356" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0">
       <animate attributeName="stroke-dashoffset" values="1;1;0;0"
-        keyTimes="0;0.09062;0.22912;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.08056;0.20366;1"
+        dur="18s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        dur="18s" repeatCount="indefinite"/>
     </path>
     <path class="wire" d="M500 258H608V320H656V372H690" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0">
       <animate attributeName="stroke-dashoffset" values="1;1;0;0"
-        keyTimes="0;0.10312;0.31903;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.09167;0.28359;1"
+        dur="18s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        dur="18s" repeatCount="indefinite"/>
     </path>
     <path class="wire" d="M360 246H244V330H166" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0">
       <animate attributeName="stroke-dashoffset" values="1;1;0;0"
-        keyTimes="0;0.03438;0.23182;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.03056;0.20606;1"
+        dur="18s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        dur="18s" repeatCount="indefinite"/>
     </path>
     <path class="wire" d="M360 258H228V370H166" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0">
       <animate attributeName="stroke-dashoffset" values="1;1;0;0"
-        keyTimes="0;0.08438;0.30170;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.07500;0.26818;1"
+        dur="18s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        dur="18s" repeatCount="indefinite"/>
     </path>
   </g>
 
   <g class="category">
     <text x="56" y="66" text-anchor="start" opacity="1">[ CORE LANGUAGES ]
       <animate attributeName="opacity" values="0;0;1;1;0"
-        keyTimes="0;0.22145;0.24145;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.19684;0.21684;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
     </text>
     <text x="430" y="65" text-anchor="middle" opacity="1">[ FRONTEND ]
       <animate attributeName="opacity" values="0;0;1;1;0"
-        keyTimes="0;0.10909;0.12909;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.09697;0.11697;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
     </text>
     <text x="680" y="76" text-anchor="start" opacity="1">[ BACKEND ]
       <animate attributeName="opacity" values="0;0;1;1;0"
-        keyTimes="0;0.22344;0.24344;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.19861;0.21861;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
     </text>
     <text x="674" y="198" text-anchor="start" opacity="1">[ DATABASE ]
       <animate attributeName="opacity" values="0;0;1;1;0"
-        keyTimes="0;0.16705;0.18705;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.14848;0.16848;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
     </text>
     <text x="430" y="330" text-anchor="middle" opacity="1">[ DEVOPS ]
       <animate attributeName="opacity" values="0;0;1;1;0"
-        keyTimes="0;0.19304;0.21304;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.17159;0.19159;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
     </text>
     <text x="740" y="330" text-anchor="middle" opacity="1">[ CLOUD ]
       <animate attributeName="opacity" values="0;0;1;1;0"
-        keyTimes="0;0.31903;0.33903;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.28359;0.30359;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
     </text>
     <text x="56" y="298" text-anchor="start" opacity="1">[ LEARNING / HOBBY ]
       <animate attributeName="opacity" values="0;0;1;1;0"
-        keyTimes="0;0.23182;0.25182;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.20606;0.22606;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
     </text>
   </g>
 
 
   <g transform="translate(121 103)" opacity="1">
     <animate attributeName="opacity" values="0;0;1;1;0"
-      keyTimes="0;0.22145;0.22345;0.88;1" dur="16s" repeatCount="indefinite"/>
+      keyTimes="0;0.19684;0.19884;0.88;1" dur="18s" repeatCount="indefinite"/>
     <g>
       <animateTransform attributeName="transform" type="scale"
         values=".82;.82;1.08;1;1;.92"
-        keyTimes="0;0.22145;0.24645;0.28145;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.19684;0.22184;0.25684;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
       <rect x="-65" y="-16" width="130" height="32" rx="6"
         fill="#3178C6" stroke="#3178C6" stroke-width="1.2"/>
       <use href="#icon-typescript" x="-55" y="-8" width="16" height="16" fill="#FFFFFF"/>
@@ -204,12 +204,12 @@
   </g>
   <g transform="translate(121 145)" opacity="1">
     <animate attributeName="opacity" values="0;0;1;1;0"
-      keyTimes="0;0.22514;0.22714;0.88;1" dur="16s" repeatCount="indefinite"/>
+      keyTimes="0;0.20013;0.20213;0.88;1" dur="18s" repeatCount="indefinite"/>
     <g>
       <animateTransform attributeName="transform" type="scale"
         values=".82;.82;1.08;1;1;.92"
-        keyTimes="0;0.22514;0.25014;0.28514;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.20013;0.22513;0.26013;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
       <rect x="-65" y="-16" width="130" height="32" rx="6"
         fill="#F7DF1E" stroke="#F7DF1E" stroke-width="1.2"/>
       <use href="#icon-javascript" x="-55" y="-8" width="16" height="16" fill="#111111"/>
@@ -218,12 +218,12 @@
   </g>
   <g transform="translate(121 187)" opacity="1">
     <animate attributeName="opacity" values="0;0;1;1;0"
-      keyTimes="0;0.24446;0.24646;0.88;1" dur="16s" repeatCount="indefinite"/>
+      keyTimes="0;0.21730;0.21930;0.88;1" dur="18s" repeatCount="indefinite"/>
     <g>
       <animateTransform attributeName="transform" type="scale"
         values=".82;.82;1.08;1;1;.92"
-        keyTimes="0;0.24446;0.26946;0.30446;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.21730;0.24230;0.27730;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
       <rect x="-43" y="-16" width="86" height="32" rx="6"
         fill="#777BB4" stroke="#777BB4" stroke-width="1.2"/>
       <use href="#icon-php" x="-33" y="-8" width="16" height="16" fill="#FFFFFF"/>
@@ -232,12 +232,12 @@
   </g>
   <g transform="translate(315 104)" opacity="1">
     <animate attributeName="opacity" values="0;0;1;1;0"
-      keyTimes="0;0.12003;0.12203;0.88;1" dur="16s" repeatCount="indefinite"/>
+      keyTimes="0;0.10669;0.10869;0.88;1" dur="18s" repeatCount="indefinite"/>
     <g>
       <animateTransform attributeName="transform" type="scale"
         values=".82;.82;1.08;1;1;.92"
-        keyTimes="0;0.12003;0.14503;0.18003;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.10669;0.13169;0.16669;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
       <rect x="-56" y="-16" width="112" height="32" rx="6"
         fill="#000000" stroke="#30363D" stroke-width="1.2"/>
       <use href="#icon-nextdotjs" x="-46" y="-8" width="16" height="16" fill="#FFFFFF"/>
@@ -246,12 +246,12 @@
   </g>
   <g transform="translate(430 104)" opacity="1">
     <animate attributeName="opacity" values="0;0;1;1;0"
-      keyTimes="0;0.10909;0.11109;0.88;1" dur="16s" repeatCount="indefinite"/>
+      keyTimes="0;0.09697;0.09897;0.88;1" dur="18s" repeatCount="indefinite"/>
     <g>
       <animateTransform attributeName="transform" type="scale"
         values=".82;.82;1.08;1;1;.92"
-        keyTimes="0;0.10909;0.13409;0.16909;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.09697;0.12197;0.15697;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
       <rect x="-45" y="-16" width="90" height="32" rx="6"
         fill="#61DAFB" stroke="#61DAFB" stroke-width="1.2"/>
       <use href="#icon-react" x="-35" y="-8" width="16" height="16" fill="#111111"/>
@@ -260,12 +260,12 @@
   </g>
   <g transform="translate(555 104)" opacity="1">
     <animate attributeName="opacity" values="0;0;1;1;0"
-      keyTimes="0;0.12088;0.12288;0.88;1" dur="16s" repeatCount="indefinite"/>
+      keyTimes="0;0.10745;0.10945;0.88;1" dur="18s" repeatCount="indefinite"/>
     <g>
       <animateTransform attributeName="transform" type="scale"
         values=".82;.82;1.08;1;1;.92"
-        keyTimes="0;0.12088;0.14588;0.18088;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.10745;0.13245;0.16745;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
       <rect x="-60" y="-16" width="120" height="32" rx="6"
         fill="#38B2AC" stroke="#38B2AC" stroke-width="1.2"/>
       <use href="#icon-tailwindcss" x="-50" y="-8" width="16" height="16" fill="#FFFFFF"/>
@@ -274,12 +274,12 @@
   </g>
   <g transform="translate(740 115)" opacity="1">
     <animate attributeName="opacity" values="0;0;1;1;0"
-      keyTimes="0;0.22344;0.22544;0.88;1" dur="16s" repeatCount="indefinite"/>
+      keyTimes="0;0.19861;0.20061;0.88;1" dur="18s" repeatCount="indefinite"/>
     <g>
       <animateTransform attributeName="transform" type="scale"
         values=".82;.82;1.08;1;1;.92"
-        keyTimes="0;0.22344;0.24844;0.28344;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.19861;0.22361;0.25861;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
       <rect x="-60" y="-16" width="120" height="32" rx="6"
         fill="#FF2D20" stroke="#FF2D20" stroke-width="1.2"/>
       <use href="#icon-laravel" x="-50" y="-8" width="16" height="16" fill="#FFFFFF"/>
@@ -288,12 +288,12 @@
   </g>
   <g transform="translate(743 238)" opacity="1">
     <animate attributeName="opacity" values="0;0;1;1;0"
-      keyTimes="0;0.16705;0.16905;0.88;1" dur="16s" repeatCount="indefinite"/>
+      keyTimes="0;0.14848;0.15048;0.88;1" dur="18s" repeatCount="indefinite"/>
     <g>
       <animateTransform attributeName="transform" type="scale"
         values=".82;.82;1.08;1;1;.92"
-        keyTimes="0;0.16705;0.19205;0.22705;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.14848;0.17348;0.20848;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
       <rect x="-69" y="-16" width="138" height="32" rx="6"
         fill="#336791" stroke="#336791" stroke-width="1.2"/>
       <use href="#icon-postgresql" x="-59" y="-8" width="16" height="16" fill="#FFFFFF"/>
@@ -302,12 +302,12 @@
   </g>
   <g transform="translate(740 280)" opacity="1">
     <animate attributeName="opacity" values="0;0;1;1;0"
-      keyTimes="0;0.21761;0.21961;0.88;1" dur="16s" repeatCount="indefinite"/>
+      keyTimes="0;0.19343;0.19543;0.88;1" dur="18s" repeatCount="indefinite"/>
     <g>
       <animateTransform attributeName="transform" type="scale"
         values=".82;.82;1.08;1;1;.92"
-        keyTimes="0;0.21761;0.24261;0.27761;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.19343;0.21843;0.25343;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
       <rect x="-60" y="-16" width="120" height="32" rx="6"
         fill="#4479A1" stroke="#4479A1" stroke-width="1.2"/>
       <use href="#icon-mysql" x="-50" y="-8" width="16" height="16" fill="#FFFFFF"/>
@@ -316,12 +316,12 @@
   </g>
   <g transform="translate(310 372)" opacity="1">
     <animate attributeName="opacity" values="0;0;1;1;0"
-      keyTimes="0;0.19886;0.20086;0.88;1" dur="16s" repeatCount="indefinite"/>
+      keyTimes="0;0.17677;0.17877;0.88;1" dur="18s" repeatCount="indefinite"/>
     <g>
       <animateTransform attributeName="transform" type="scale"
         values=".82;.82;1.08;1;1;.92"
-        keyTimes="0;0.19886;0.22386;0.25886;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.17677;0.20177;0.23677;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
       <rect x="-38" y="-16" width="76" height="32" rx="6"
         fill="#F05032" stroke="#F05032" stroke-width="1.2"/>
       <use href="#icon-git" x="-28" y="-8" width="16" height="16" fill="#FFFFFF"/>
@@ -330,12 +330,12 @@
   </g>
   <g transform="translate(435 372)" opacity="1">
     <animate attributeName="opacity" values="0;0;1;1;0"
-      keyTimes="0;0.19304;0.19504;0.88;1" dur="16s" repeatCount="indefinite"/>
+      keyTimes="0;0.17159;0.17359;0.88;1" dur="18s" repeatCount="indefinite"/>
     <g>
       <animateTransform attributeName="transform" type="scale"
         values=".82;.82;1.08;1;1;.92"
-        keyTimes="0;0.19304;0.21804;0.25304;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.17159;0.19659;0.23159;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
       <rect x="-72" y="-16" width="144" height="32" rx="6"
         fill="#2088FF" stroke="#2088FF" stroke-width="1.2"/>
       <use href="#icon-githubactions" x="-62" y="-8" width="16" height="16" fill="#FFFFFF"/>
@@ -344,12 +344,12 @@
   </g>
   <g transform="translate(575 372)" opacity="1">
     <animate attributeName="opacity" values="0;0;1;1;0"
-      keyTimes="0;0.22912;0.23112;0.88;1" dur="16s" repeatCount="indefinite"/>
+      keyTimes="0;0.20366;0.20566;0.88;1" dur="18s" repeatCount="indefinite"/>
     <g>
       <animateTransform attributeName="transform" type="scale"
         values=".82;.82;1.08;1;1;.92"
-        keyTimes="0;0.22912;0.25412;0.28912;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.20366;0.22866;0.26366;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
       <rect x="-50" y="-16" width="100" height="32" rx="6"
         fill="#2496ED" stroke="#2496ED" stroke-width="1.2"/>
       <use href="#icon-docker" x="-40" y="-8" width="16" height="16" fill="#FFFFFF"/>
@@ -358,12 +358,12 @@
   </g>
   <g transform="translate(740 372)" opacity="1">
     <animate attributeName="opacity" values="0;0;1;1;0"
-      keyTimes="0;0.31903;0.32103;0.88;1" dur="16s" repeatCount="indefinite"/>
+      keyTimes="0;0.28359;0.28559;0.88;1" dur="18s" repeatCount="indefinite"/>
     <g>
       <animateTransform attributeName="transform" type="scale"
         values=".82;.82;1.08;1;1;.92"
-        keyTimes="0;0.31903;0.34403;0.37903;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.28359;0.30859;0.34359;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
       <rect x="-50" y="-16" width="100" height="32" rx="6"
         fill="#FF9900" stroke="#FF9900" stroke-width="1.2"/>
       <use href="#icon-amazonwebservices" x="-40" y="-8" width="16" height="16" fill="#232F3E"/>
@@ -372,12 +372,12 @@
   </g>
   <g transform="translate(116 330)" opacity="1">
     <animate attributeName="opacity" values="0;0;1;1;0"
-      keyTimes="0;0.23182;0.23382;0.88;1" dur="16s" repeatCount="indefinite"/>
+      keyTimes="0;0.20606;0.20806;0.88;1" dur="18s" repeatCount="indefinite"/>
     <g>
       <animateTransform attributeName="transform" type="scale"
         values=".82;.82;1.08;1;1;.92"
-        keyTimes="0;0.23182;0.25682;0.29182;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.20606;0.23106;0.26606;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
       <rect x="-50" y="-16" width="100" height="32" rx="6"
         fill="#3776AB" stroke="#3776AB" stroke-width="1.2"/>
       <use href="#icon-python" x="-40" y="-8" width="16" height="16" fill="#FFFFFF"/>
@@ -386,12 +386,12 @@
   </g>
   <g transform="translate(116 370)" opacity="1">
     <animate attributeName="opacity" values="0;0;1;1;0"
-      keyTimes="0;0.30170;0.30370;0.88;1" dur="16s" repeatCount="indefinite"/>
+      keyTimes="0;0.26818;0.27018;0.88;1" dur="18s" repeatCount="indefinite"/>
     <g>
       <animateTransform attributeName="transform" type="scale"
         values=".82;.82;1.08;1;1;.92"
-        keyTimes="0;0.30170;0.32670;0.36170;0.88;1"
-        dur="16s" repeatCount="indefinite"/>
+        keyTimes="0;0.26818;0.29318;0.32818;0.88;1"
+        dur="18s" repeatCount="indefinite"/>
       <rect x="-50" y="-16" width="100" height="32" rx="6"
         fill="#000000" stroke="#30363D" stroke-width="1.2"/>
       <use href="#icon-rust" x="-40" y="-8" width="16" height="16" fill="#FFFFFF"/>
