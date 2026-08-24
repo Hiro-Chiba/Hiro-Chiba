@@ -272,7 +272,7 @@
       <text x="-26" y="4" class="node-text" fill="#FFFFFF">TailwindCSS</text>
     </g>
   </g>
-  <g transform="translate(740 115)" opacity="1">
+  <g transform="translate(733 115)" opacity="1">
     <animate attributeName="opacity" values="0;0;1;1;0"
       keyTimes="0;0.19861;0.20061;0.88;1" dur="18s" repeatCount="indefinite"/>
     <g>
@@ -280,13 +280,13 @@
         values=".82;.82;1.08;1;1;.92"
         keyTimes="0;0.19861;0.22361;0.25861;0.88;1"
         dur="18s" repeatCount="indefinite"/>
-      <rect x="-60" y="-16" width="120" height="32" rx="6"
+      <rect x="-53" y="-16" width="106" height="32" rx="6"
         fill="#FF2D20" stroke="#FF2D20" stroke-width="1.2"/>
-      <use href="#icon-laravel" x="-50" y="-8" width="16" height="16" fill="#FFFFFF"/>
-      <text x="-26" y="4" class="node-text" fill="#FFFFFF">Laravel</text>
+      <use href="#icon-laravel" x="-43" y="-8" width="16" height="16" fill="#FFFFFF"/>
+      <text x="-19" y="4" class="node-text" fill="#FFFFFF">Laravel</text>
     </g>
   </g>
-  <g transform="translate(749 238)" opacity="1">
+  <g transform="translate(744 238)" opacity="1">
     <animate attributeName="opacity" values="0;0;1;1;0"
       keyTimes="0;0.15227;0.15427;0.88;1" dur="18s" repeatCount="indefinite"/>
     <g>
@@ -294,13 +294,13 @@
         values=".82;.82;1.08;1;1;.92"
         keyTimes="0;0.15227;0.17727;0.21227;0.88;1"
         dur="18s" repeatCount="indefinite"/>
-      <rect x="-69" y="-16" width="138" height="32" rx="6"
+      <rect x="-64" y="-16" width="128" height="32" rx="6"
         fill="#336791" stroke="#336791" stroke-width="1.2"/>
-      <use href="#icon-postgresql" x="-59" y="-8" width="16" height="16" fill="#FFFFFF"/>
-      <text x="-35" y="4" class="node-text" fill="#FFFFFF">PostgreSQL</text>
+      <use href="#icon-postgresql" x="-54" y="-8" width="16" height="16" fill="#FFFFFF"/>
+      <text x="-30" y="4" class="node-text" fill="#FFFFFF">PostgreSQL</text>
     </g>
   </g>
-  <g transform="translate(740 280)" opacity="1">
+  <g transform="translate(726 280)" opacity="1">
     <animate attributeName="opacity" values="0;0;1;1;0"
       keyTimes="0;0.19343;0.19543;0.88;1" dur="18s" repeatCount="indefinite"/>
     <g>
@@ -308,10 +308,10 @@
         values=".82;.82;1.08;1;1;.92"
         keyTimes="0;0.19343;0.21843;0.25343;0.88;1"
         dur="18s" repeatCount="indefinite"/>
-      <rect x="-60" y="-16" width="120" height="32" rx="6"
+      <rect x="-46" y="-16" width="92" height="32" rx="6"
         fill="#4479A1" stroke="#4479A1" stroke-width="1.2"/>
-      <use href="#icon-mysql" x="-50" y="-8" width="16" height="16" fill="#FFFFFF"/>
-      <text x="-26" y="4" class="node-text" fill="#FFFFFF">MySQL</text>
+      <use href="#icon-mysql" x="-36" y="-8" width="16" height="16" fill="#FFFFFF"/>
+      <text x="-12" y="4" class="node-text" fill="#FFFFFF">MySQL</text>
     </g>
   </g>
   <g transform="translate(310 372)" opacity="1">
@@ -356,7 +356,7 @@
       <text x="-16" y="4" class="node-text" fill="#FFFFFF">Docker</text>
     </g>
   </g>
-  <g transform="translate(730 372)" opacity="1">
+  <g transform="translate(719 372)" opacity="1">
     <animate attributeName="opacity" values="0;0;1;1;0"
       keyTimes="0;0.27727;0.27927;0.88;1" dur="18s" repeatCount="indefinite"/>
     <g>
@@ -364,10 +364,10 @@
         values=".82;.82;1.08;1;1;.92"
         keyTimes="0;0.27727;0.30227;0.33727;0.88;1"
         dur="18s" repeatCount="indefinite"/>
-      <rect x="-50" y="-16" width="100" height="32" rx="6"
+      <rect x="-39" y="-16" width="78" height="32" rx="6"
         fill="#FF9900" stroke="#FF9900" stroke-width="1.2"/>
-      <use href="#icon-amazonwebservices" x="-40" y="-8" width="16" height="16" fill="#232F3E"/>
-      <text x="-16" y="4" class="node-text" fill="#232F3E">AWS</text>
+      <use href="#icon-amazonwebservices" x="-29" y="-8" width="16" height="16" fill="#232F3E"/>
+      <text x="-5" y="4" class="node-text" fill="#232F3E">AWS</text>
     </g>
   </g>
   <g transform="translate(116 330)" opacity="1">
