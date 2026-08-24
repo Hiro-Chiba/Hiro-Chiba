@@ -150,7 +150,7 @@ CATEGORIES = (
     ("[ BACKEND ]", RIGHT_COLUMN_LEFT, 76, "start", ("laravel",)),
     ("[ DATABASE ]", RIGHT_COLUMN_LEFT, 198, "start", ("postgresql", "mysql")),
     ("[ DEVOPS ]", 430, 330, "middle", ("git", "githubactions", "docker")),
-    ("[ CLOUD ]", RIGHT_COLUMN_LEFT + 50, 330, "middle", ("amazonwebservices",)),
+    ("[ CLOUD ]", RIGHT_COLUMN_LEFT, 330, "start", ("amazonwebservices",)),
     ("[ LEARNING / HOBBY ]", 56, 298, "start", ("python", "rust")),
 )
 

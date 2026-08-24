@@ -175,7 +175,7 @@
         keyTimes="0;0.17159;0.19159;0.88;1"
         dur="18s" repeatCount="indefinite"/>
     </text>
-    <text x="730" y="330" text-anchor="middle" opacity="1">[ CLOUD ]
+    <text x="680" y="330" text-anchor="start" opacity="1">[ CLOUD ]
       <animate attributeName="opacity" values="0;0;1;1;0"
         keyTimes="0;0.27727;0.29727;0.88;1"
         dur="18s" repeatCount="indefinite"/>
