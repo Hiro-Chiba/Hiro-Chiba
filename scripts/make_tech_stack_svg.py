@@ -18,6 +18,7 @@ LINE_SPEED = 88.0
 FADE_START = 0.88
 ICON_FETCH_ATTEMPTS = 3
 ICON_URL = "https://cdn.jsdelivr.net/npm/simple-icons@{version}/icons/{slug}.svg"
+RIGHT_COLUMN_LEFT = 680
 
 
 @dataclass(frozen=True)
@@ -46,9 +47,33 @@ TECHS = (
     Tech("Next.js", "nextdotjs", "#000000", "#FFFFFF", 315, 104, 112),
     Tech("React", "react", "#61DAFB", "#111111", 430, 104, 90),
     Tech("TailwindCSS", "tailwindcss", "#38B2AC", "#FFFFFF", 555, 104, 120),
-    Tech("Laravel", "laravel", "#FF2D20", "#FFFFFF", 740, 115, 120),
-    Tech("PostgreSQL", "postgresql", "#336791", "#FFFFFF", 743, 238, 138),
-    Tech("MySQL", "mysql", "#4479A1", "#FFFFFF", 740, 280, 120),
+    Tech(
+        "Laravel",
+        "laravel",
+        "#FF2D20",
+        "#FFFFFF",
+        RIGHT_COLUMN_LEFT + 60,
+        115,
+        120,
+    ),
+    Tech(
+        "PostgreSQL",
+        "postgresql",
+        "#336791",
+        "#FFFFFF",
+        RIGHT_COLUMN_LEFT + 69,
+        238,
+        138,
+    ),
+    Tech(
+        "MySQL",
+        "mysql",
+        "#4479A1",
+        "#FFFFFF",
+        RIGHT_COLUMN_LEFT + 60,
+        280,
+        120,
+    ),
     Tech("Git", "git", "#F05032", "#FFFFFF", 310, 372, 76),
     Tech("GitHub Actions", "githubactions", "#2088FF", "#FFFFFF", 435, 372, 144),
     Tech("Docker", "docker", "#2496ED", "#FFFFFF", 575, 372, 100),
@@ -57,7 +82,7 @@ TECHS = (
         "amazonwebservices",
         "#FF9900",
         "#232F3E",
-        740,
+        RIGHT_COLUMN_LEFT + 50,
         372,
         100,
         icon_version=AWS_SIMPLE_ICONS_VERSION,
@@ -75,10 +100,26 @@ BRANCHES = (
     Branch("react", ((430, 190), (430, 120)), 0.95),
     Branch("tailwindcss", ((468, 190), (468, 150), (555, 150), (555, 120)), 0.15),
     Branch(
-        "laravel", ((500, 210), (648, 210), (648, 135), (680, 135), (680, 115)), 0.45
+        "laravel",
+        (
+            (500, 210),
+            (648, 210),
+            (648, 135),
+            (RIGHT_COLUMN_LEFT, 135),
+            (RIGHT_COLUMN_LEFT, 115),
+        ),
+        0.45,
     ),
-    Branch("postgresql", ((500, 234), (640, 234), (640, 238), (674, 238)), 0.65),
-    Branch("mysql", ((500, 246), (624, 246), (624, 280), (680, 280)), 1.05),
+    Branch(
+        "postgresql",
+        ((500, 234), (640, 234), (640, 238), (RIGHT_COLUMN_LEFT, 238)),
+        0.65,
+    ),
+    Branch(
+        "mysql",
+        ((500, 246), (624, 246), (624, 280), (RIGHT_COLUMN_LEFT, 280)),
+        1.05,
+    ),
     Branch("git", ((392, 268), (392, 306), (310, 306), (310, 356)), 1.25),
     Branch(
         "githubactions",
@@ -88,7 +129,14 @@ BRANCHES = (
     Branch("docker", ((468, 268), (468, 294), (575, 294), (575, 356)), 1.45),
     Branch(
         "amazonwebservices",
-        ((500, 258), (608, 258), (608, 320), (656, 320), (656, 372), (690, 372)),
+        (
+            (500, 258),
+            (608, 258),
+            (608, 320),
+            (656, 320),
+            (656, 372),
+            (RIGHT_COLUMN_LEFT, 372),
+        ),
         1.65,
     ),
     Branch("python", ((360, 246), (244, 246), (244, 330), (166, 330)), 0.55),
@@ -99,10 +147,10 @@ BRANCHES = (
 CATEGORIES = (
     ("[ CORE LANGUAGES ]", 56, 66, "start", ("typescript", "javascript", "php")),
     ("[ FRONTEND ]", 430, 65, "middle", ("nextdotjs", "react", "tailwindcss")),
-    ("[ BACKEND ]", 680, 76, "start", ("laravel",)),
-    ("[ DATABASE ]", 674, 198, "start", ("postgresql", "mysql")),
+    ("[ BACKEND ]", RIGHT_COLUMN_LEFT, 76, "start", ("laravel",)),
+    ("[ DATABASE ]", RIGHT_COLUMN_LEFT, 198, "start", ("postgresql", "mysql")),
     ("[ DEVOPS ]", 430, 330, "middle", ("git", "githubactions", "docker")),
-    ("[ CLOUD ]", 740, 330, "middle", ("amazonwebservices",)),
+    ("[ CLOUD ]", RIGHT_COLUMN_LEFT + 50, 330, "middle", ("amazonwebservices",)),
     ("[ LEARNING / HOBBY ]", 56, 298, "start", ("python", "rust")),
 )
 

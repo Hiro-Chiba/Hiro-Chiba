@@ -15,7 +15,8 @@ from pathlib import Path
 
 from profile_art_config import DEFAULT_CONFIG, RevealLoop, load_config, project_path
 
-PALETTE = ("#161b22", "#0e4429", "#006d32", "#26a641", "#39d353")
+LIGHT_PALETTE = ("#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39")
+DARK_PALETTE = ("#161b22", "#0e4429", "#006d32", "#26a641", "#39d353")
 MONTHS = (
     "Jan",
     "Feb",
@@ -89,7 +90,7 @@ def calendar_cells(contributions: list[dict]):
         day_offset = (date - first_sunday).days
         week = day_offset // 7
         weekday = (date.weekday() + 1) % 7
-        level = max(0, min(int(item.get("level", 0)), len(PALETTE) - 1))
+        level = max(0, min(int(item.get("level", 0)), len(LIGHT_PALETTE) - 1))
         count = int(item.get("count", 0))
         cells.append((week, weekday, date.isoformat(), count, level))
         month_key = (date.year, date.month)
@@ -120,6 +121,14 @@ def render(
         }
         """
     )
+    light_palette_css = "".join(
+        f".level-{level}{{fill:{color}}}"
+        for level, color in enumerate(LIGHT_PALETTE)
+    )
+    dark_palette_css = "".join(
+        f".level-{level}{{fill:{color}}}"
+        for level, color in enumerate(DARK_PALETTE)
+    )
 
     parts = [
         (
@@ -131,8 +140,16 @@ def render(
         f'<desc id="desc">{total:,} contributions during the last year</desc>',
         (
             "<style>"
-            "text.label{fill:#7d8590;font-size:13px;font-weight:600}"
-            "text.total{fill:#e6edf3;font-size:15px;font-weight:700}"
+            "text.label{fill:#59636e;font-size:13px;font-weight:600}"
+            "text.total{fill:#1f2328;font-size:15px;font-weight:700}"
+            f"{light_palette_css}"
+            ".cell-flash{fill:#39d353}"
+            "@media (prefers-color-scheme:dark){"
+            "text.label{fill:#7d8590}"
+            "text.total{fill:#e6edf3}"
+            f"{dark_palette_css}"
+            ".cell-flash{fill:#b4ffaa}"
+            "}"
             f"{animation_css}</style>"
         ),
         f'<rect width="{width}" height="{height}" fill="none"/>',
@@ -150,18 +167,17 @@ def render(
     for week, weekday, date, count, level in cells:
         x = LEFT + week * step
         y = TOP + weekday * step
-        color = PALETTE[level]
         tooltip = f"<title>{html.escape(date)}: {count} contributions</title>"
         if static:
             parts.append(
-                f'<rect class="cell" x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2.5" '
-                f'fill="{color}">{tooltip}</rect>'
+                f'<rect class="cell level-{level}" x="{x}" y="{y}" width="{CELL}" height="{CELL}" '
+                f'rx="2.5">{tooltip}</rect>'
             )
             continue
 
         parts.append(
-            f'<rect class="cell-static" x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2.5" '
-            f'fill="{color}">{tooltip}</rect>'
+            f'<rect class="cell-static level-{level}" x="{x}" y="{y}" width="{CELL}" height="{CELL}" '
+            f'rx="2.5">{tooltip}</rect>'
         )
         delay = ((week + weekday * 0.6) / max_order) * timing.sweep
         reveal_end, fade_start, fade_end = timing.loop.opacity_key_times(
@@ -180,17 +196,20 @@ def render(
         flash = ""
         if count:
             flash = (
-                f'<animate attributeName="fill" values="#b4ffaa;#b4ffaa;{color};{color}" '
+                f'<rect class="cell-flash" x="{-CELL / 2:.1f}" y="{-CELL / 2:.1f}" '
+                f'width="{CELL}" height="{CELL}" rx="2.5" pointer-events="none">'
+                f'<animate attributeName="opacity" values="1;1;0;0" '
                 f'keyTimes="0;{reveal_end * 0.45:.5f};{reveal_end:.5f};1" '
                 f'begin="{delay:.3f}s" dur="{timing.loop.duration:.2f}s" repeatCount="indefinite"/>'
+                "</rect>"
             )
         center_x = x + CELL / 2
         center_y = y + CELL / 2
         parts.append(
             f'<g class="cell-motion" transform="translate({center_x:.1f} {center_y:.1f})">'
             f'<g opacity="0">{opacity}{scale}'
-            f'<rect class="cell" x="{-CELL / 2:.1f}" y="{-CELL / 2:.1f}" '
-            f'width="{CELL}" height="{CELL}" rx="2.5" fill="{color}">{tooltip}{flash}</rect>'
+            f'<rect class="cell level-{level}" x="{-CELL / 2:.1f}" y="{-CELL / 2:.1f}" '
+            f'width="{CELL}" height="{CELL}" rx="2.5">{tooltip}</rect>{flash}'
             "</g></g>"
         )
 
