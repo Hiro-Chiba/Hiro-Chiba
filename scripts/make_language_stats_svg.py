@@ -74,7 +74,7 @@ def human_size(value: int) -> str:
 
 def github_token() -> str:
     """A token with repo scope, so private repositories are counted too."""
-    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    token = (os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or "").strip()
     if token:
         return token
     try:
@@ -106,6 +106,14 @@ def fetch_languages(user: str, token: str) -> tuple[dict[str, int], dict[str, st
             with urllib.request.urlopen(request, timeout=25) as response:
                 payload = json.load(response)
             break
+        except urllib.error.HTTPError as error:
+            # A rejected token will be rejected again, so say so instead of retrying.
+            detail = error.read().decode("utf-8", "replace").strip()[:200]
+            raise RuntimeError(
+                f"GitHub refused the request with HTTP {error.code}: {detail}. "
+                "Check that the token in GITHUB_TOKEN is valid and has access to "
+                "private repositories."
+            ) from error
         except (TimeoutError, urllib.error.URLError, json.JSONDecodeError) as error:
             if attempt == FETCH_ATTEMPTS - 1:
                 raise RuntimeError(

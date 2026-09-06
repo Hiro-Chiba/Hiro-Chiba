@@ -24,9 +24,9 @@ jobs:
 
       - name: Render language stats
         env:
-          # Private repositories need a token with repo scope, which the default
-          # GITHUB_TOKEN does not have. REPOSCOPE_TOKEN is the existing fallback.
-          GITHUB_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN || secrets.REPOSCOPE_TOKEN }}
+          # Private repositories are invisible to the default GITHUB_TOKEN, so this
+          # needs a personal access token that can read every repository we own.
+          GITHUB_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
         run: python scripts/make_language_stats_svg.py
 
       - name: Publish refreshed art to assets branch
