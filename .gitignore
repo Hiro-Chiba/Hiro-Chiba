@@ -2,3 +2,4 @@
 __pycache__/
 .ruff_cache/
 assets/contrib-heatmap.svg
+assets/lang-stats.svg

@@ -24,5 +24,13 @@
     "fade_seconds": 0.6,
     "sweep_seconds": 3.6,
     "cell_seconds": 0.55
+  },
+  "language_stats_output": "assets/lang-stats.svg",
+  "language_stats": {
+    "top": 6,
+    "excluded": [
+      "Jupyter Notebook",
+      "Yacc"
+    ]
   }
 }

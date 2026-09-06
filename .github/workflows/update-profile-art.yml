@@ -22,19 +22,26 @@ jobs:
       - name: Render contribution graph
         run: python scripts/render_contributions.py
 
-      - name: Publish refreshed graph to assets branch
+      - name: Render language stats
+        env:
+          # Private repositories need a token with repo scope, which the default
+          # GITHUB_TOKEN does not have. REPOSCOPE_TOKEN is the existing fallback.
+          GITHUB_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN || secrets.REPOSCOPE_TOKEN }}
+        run: python scripts/make_language_stats_svg.py
+
+      - name: Publish refreshed art to assets branch
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git fetch --depth=1 origin assets-bot
           git worktree add --detach "${{ runner.temp }}/assets-bot" FETCH_HEAD
-          cp assets/contrib-heatmap.svg "${{ runner.temp }}/assets-bot/contrib-heatmap.svg"
+          cp assets/contrib-heatmap.svg assets/lang-stats.svg "${{ runner.temp }}/assets-bot/"
           cd "${{ runner.temp }}/assets-bot"
-          if git diff --quiet -- contrib-heatmap.svg; then
-            echo "Contribution graph is unchanged."
+          if git diff --quiet; then
+            echo "Profile art is unchanged."
             exit 0
           fi
-          git add contrib-heatmap.svg
-          git commit -m "chore: refresh contribution graph [skip ci]"
+          git add contrib-heatmap.svg lang-stats.svg
+          git commit -m "chore: refresh profile art [skip ci]"
           git push origin HEAD:assets-bot
