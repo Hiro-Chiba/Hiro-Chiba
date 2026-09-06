@@ -10,6 +10,7 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v7
 
@@ -28,7 +29,6 @@ jobs:
           test -f assets/ascii-portrait.svg
           test -f assets/hiro-ascii.svg
           test -f assets/wordmark.svg
-          test -f assets/contrib-heatmap.svg
           test -f assets/tech-stack.svg
           grep -Fq 'src="./assets/tech-stack.svg"' README.md
 
@@ -37,8 +37,7 @@ jobs:
           python -c "import xml.etree.ElementTree as ET;
           [ET.parse(path) for path in
           ('assets/ascii-portrait.svg', 'assets/hiro-ascii.svg',
-          'assets/wordmark.svg', 'assets/contrib-heatmap.svg',
-          'assets/tech-stack.svg')]"
+          'assets/wordmark.svg', 'assets/tech-stack.svg')]"
 
       - name: Verify generated portrait is current
         run: |
