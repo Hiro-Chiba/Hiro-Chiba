@@ -16,7 +16,7 @@
 
 <h3><code>hiro@github ~ $ ./contributions.sh</code></h3>
 
-<img src="./assets/contrib-heatmap.svg" width="860" alt="Hiro's animated GitHub contribution graph" />
+<img src="https://raw.githubusercontent.com/Hiro-Chiba/Hiro-Chiba/assets-bot/contrib-heatmap.svg" width="860" alt="Hiro's animated GitHub contribution graph" />
 
 <br>
 <br>

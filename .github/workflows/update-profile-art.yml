@@ -12,17 +12,28 @@ jobs:
   contributions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
       - name: Render contribution graph
         run: python scripts/render_contributions.py
 
-      - name: Commit refreshed graph
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: refresh contribution graph [skip ci]"
-          file_pattern: "assets/contrib-heatmap.svg"
+      - name: Publish refreshed graph to assets branch
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --depth=1 origin assets-bot
+          git worktree add --detach "${{ runner.temp }}/assets-bot" FETCH_HEAD
+          cp assets/contrib-heatmap.svg "${{ runner.temp }}/assets-bot/contrib-heatmap.svg"
+          cd "${{ runner.temp }}/assets-bot"
+          if git diff --quiet -- contrib-heatmap.svg; then
+            echo "Contribution graph is unchanged."
+            exit 0
+          fi
+          git add contrib-heatmap.svg
+          git commit -m "chore: refresh contribution graph [skip ci]"
+          git push origin HEAD:assets-bot
