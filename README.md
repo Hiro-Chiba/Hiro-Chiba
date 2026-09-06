@@ -28,6 +28,13 @@
 <br>
 <br>
 
+<h3><code>hiro@github ~ $ ./lang-stats.sh</code></h3>
+
+<img src="https://raw.githubusercontent.com/Hiro-Chiba/Hiro-Chiba/assets-bot/lang-stats.svg" width="860" alt="Hiro's animated language usage panel" />
+
+<br>
+<br>
+
 </div>
 
 <!-- Legacy Tech Stack design. Kept for possible restoration.
