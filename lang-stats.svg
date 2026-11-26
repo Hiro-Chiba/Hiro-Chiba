@@ -190,7 +190,7 @@
   <rect x="551.50" y="118" width="3.6" height="14" rx="1.2" fill="#1C222B" opacity="1"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.10000;0.11000;0.9;1" dur="16s" repeatCount="indefinite"/></rect>
   <rect x="551.50" y="118" width="3.60" height="14" rx="1.2" fill="#512BD4" opacity="1"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.15214;0.16014;0.9;1" dur="16s" repeatCount="indefinite"/></rect>
   <rect x="556.00" y="118" width="3.6" height="14" rx="1.2" fill="#1C222B" opacity="1"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.10000;0.11000;0.9;1" dur="16s" repeatCount="indefinite"/></rect>
-  <rect x="556.00" y="118" width="1.67" height="14" rx="1.2" fill="#512BD4" opacity="1"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.15280;0.16080;0.9;1" dur="16s" repeatCount="indefinite"/></rect>
+  <rect x="556.00" y="118" width="1.66" height="14" rx="1.2" fill="#512BD4" opacity="1"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.15280;0.16080;0.9;1" dur="16s" repeatCount="indefinite"/></rect>
   <rect x="560.50" y="118" width="3.6" height="14" rx="1.2" fill="#1C222B" opacity="1"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.10000;0.11000;0.9;1" dur="16s" repeatCount="indefinite"/></rect>
   <rect x="565.00" y="118" width="3.6" height="14" rx="1.2" fill="#1C222B" opacity="1"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.10000;0.11000;0.9;1" dur="16s" repeatCount="indefinite"/></rect>
   <rect x="569.50" y="118" width="3.6" height="14" rx="1.2" fill="#1C222B" opacity="1"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.10000;0.11000;0.9;1" dur="16s" repeatCount="indefinite"/></rect>
@@ -740,5 +740,5 @@
   <rect x="637.00" y="278" width="3.6" height="14" rx="1.2" fill="#1C222B" opacity="1"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.46000;0.47000;0.9;1" dur="16s" repeatCount="indefinite"/></rect>
   <rect x="641.50" y="278" width="3.6" height="14" rx="1.2" fill="#1C222B" opacity="1"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.46000;0.47000;0.9;1" dur="16s" repeatCount="indefinite"/></rect>
   <g opacity="1"><text class="key" x="736" y="289" text-anchor="end">1.34 MB</text><text class="value" x="820" y="289" text-anchor="end">1.87%</text><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.52600;0.54600;0.9;1" dur="16s" repeatCount="indefinite"/></g>
-  <g opacity="1"><line class="rule" x1="40" y1="320" x2="820" y2="320"/><text class="muted" x="40" y="346">17 repos  (6 public · 11 private)   ·   71.66 MB of code   ·   refreshed 2026-11-25 UTC</text><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.68000;0.70000;0.9;1" dur="16s" repeatCount="indefinite"/></g>
+  <g opacity="1"><line class="rule" x1="40" y1="320" x2="820" y2="320"/><text class="muted" x="40" y="346">17 repos  (6 public · 11 private)   ·   71.66 MB of code   ·   refreshed 2026-11-26 UTC</text><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.68000;0.70000;0.9;1" dur="16s" repeatCount="indefinite"/></g>
 </svg>
